@@ -1,27 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef138761da8c1255dd65512405cb79c1",
+    "revision": "e5017fd2553e6bf07f6b11345619cf40",
     "url": "/index.html"
   },
   {
-    "revision": "9823eefb18c1ac210e10",
+    "revision": "14e1c5ebd51c94076c3c",
     "url": "/static/css/main.5fe356c6.chunk.css"
   },
   {
-    "revision": "0fd187fb6b97a11db70b",
-    "url": "/static/js/2.bcdc7efb.chunk.js"
+    "revision": "c2b73be7d0e67b8adb00",
+    "url": "/static/js/2.f7a0eed3.chunk.js"
   },
   {
-    "revision": "9823eefb18c1ac210e10",
-    "url": "/static/js/main.b53aff99.chunk.js"
+    "revision": "14e1c5ebd51c94076c3c",
+    "url": "/static/js/main.ec0986a0.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
-  },
-  {
-    "revision": "7257a1a94be550133f3233fd792ee724",
-    "url": "/static/media/avatar.7257a1a9.jpg"
   },
   {
     "revision": "6b1983a26a32647c4832456dc9f5dcd3",
@@ -40,28 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/bg4.4bff5d45.jpg"
   },
   {
-    "revision": "056eb0586182a8d28273ad11c028e912",
-    "url": "/static/media/bg5.056eb058.jpg"
-  },
-  {
-    "revision": "d7d1aaf71d275992031bd75cdb6ec65c",
-    "url": "/static/media/bg6.d7d1aaf7.jpg"
-  },
-  {
     "revision": "607a4a36d058e55773625ba23518e291",
     "url": "/static/media/bg7.607a4a36.jpg"
   },
   {
-    "revision": "6737ce3b2577a1c3977e4d479511f642",
-    "url": "/static/media/bg8.6737ce3b.jpg"
-  },
-  {
     "revision": "f7cb2d390498c2969b2b1050f3e024ce",
     "url": "/static/media/creative-tim-white-slim2.f7cb2d39.png"
-  },
-  {
-    "revision": "089c4f4e55f158a69d0364c6b6339f37",
-    "url": "/static/media/eva.089c4f4e.jpg"
   },
   {
     "revision": "ffcc99c42164b65da7af6307b66379cf",
@@ -114,9 +94,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "225653f9f4dacef3e81bcc52f5ef547d",
     "url": "/static/media/profile.225653f9.jpg"
-  },
-  {
-    "revision": "f217f346c88e5fb2720ca7c28827ff72",
-    "url": "/static/media/ryan.f217f346.jpg"
   }
 ]);
