@@ -1,29 +1,17 @@
 import React from "react";
 
-// reactstrap components
-// import {
-// } from "reactstrap";
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import MainNavbar from "components/Navbars/MainNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
-import Images from "./index-sections/Images.js";
-import BasicElements from "./index-sections/BasicElements.js";
-import Navbars from "./index-sections/Navbars.js";
-import Tabs from "./index-sections/Tabs.js";
-import Pagination from "./index-sections/Pagination.js";
-import Notifications from "./index-sections/Notifications.js";
-import Typography from "./index-sections/Typography.js";
-import Javascript from "./index-sections/Javascript.js";
-import Carousel from "./index-sections/Carousel.js";
-import NucleoIcons from "./index-sections/NucleoIcons.js";
-import CompleteExamples from "./index-sections/CompleteExamples.js";
-import SignUp from "./index-sections/SignUp.js";
-import Examples from "./index-sections/Examples.js";
-import Download from "./index-sections/Download.js";
+import IntroSection from './sections/IntroSection';
+import RoomsSection from './sections/RoomsSection';
+import BreakfastSection from './sections/BreakfastSection';
+import SeeAndDoSection from './sections/SeeAndDoSection';
+import PhotosSection from './sections/PhotosSection';
 
 function Index() {
   React.useEffect(() => {
@@ -37,26 +25,30 @@ function Index() {
       document.body.classList.remove("sidebar-collapse");
     };
   });
+  
   return (
     <>
-      <IndexNavbar />
+      <MainNavbar asIndex />
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <Images />
-          <BasicElements />
-          <Navbars />
-          <Tabs />
-          <Pagination />
-          <Notifications />
-          <Typography />
-          <Javascript />
-          <Carousel />
-          <NucleoIcons />
-          <CompleteExamples />
-          <SignUp />
-          <Examples />
-          <Download />
+          {/* <Images /> */}
+          <div id="intro-section">
+          <IntroSection />
+          </div>
+          <div id="rooms-section">
+            <RoomsSection />
+          </div>
+          <div id="breakfast-section">
+            <BreakfastSection />
+          </div>
+          
+          <div id="seeanddo-section">
+            <SeeAndDoSection />
+          </div>
+          <div id="photos-section">
+            <PhotosSection />
+          </div>
         </div>
         <DarkFooter />
       </div>

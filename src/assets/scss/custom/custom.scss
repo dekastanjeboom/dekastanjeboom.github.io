@@ -1,0 +1,23 @@
+.section {
+  padding: 60px 0 !important;
+}
+
+.nav-link {
+  cursor: pointer !important;
+}
+
+// Maps
+.mapouter {
+  margin-left: auto;
+  margin-right: 8px;
+  position: relative;
+  text-align: right;
+  height: 100;
+  width:200;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100;
+  width:200;
+}

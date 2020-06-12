@@ -44,8 +44,10 @@ function LoginPage() {
             backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
           }}
         ></div>
+        
         <div className="content">
           <Container>
+          
             <Col className="ml-auto mr-auto" md="4">
               <Card className="card-login card-plain">
                 <Form action="https://docs.google.com/forms/d/e/1FAIpQLSfsG9w2iAFZJ0eXv--KmzZNmEdooTlrX2Bhe8mSWJHYQXqiZA/formResponse" className="form" method="post">
