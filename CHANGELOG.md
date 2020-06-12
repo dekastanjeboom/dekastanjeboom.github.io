@@ -6,3 +6,6 @@
 - Added Reactstrap as base framework
 - Added design from Now UI Kit by Creative Tim
 - Added React Hooks
+
+## 2020-6-12
+### Adopted and adjusted for de kastanjeboom
