@@ -23,7 +23,7 @@ function RoomBookingForm(props) {
   const { t } = useTranslation();
   return (
     <Form
-      action={process.env.REACT_APP_BOOKING_POST_URL}
+      action="https://docs.google.com/forms/d/e/1FAIpQLSfsG9w2iAFZJ0eXv--KmzZNmEdooTlrX2Bhe8mSWJHYQXqiZA/formResponse"
       className="form"
       method="post"
     >
