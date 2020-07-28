@@ -11,13 +11,17 @@ function BreakfastSection() {
     <div className="section">
       <Container>
         <Row>
-          <Col xs="3">
+          <Col xs="2" style={{paddingLeft: 0, paddingRight: 0}}>
             <img
-              alt="breakfast picture 1"
+              alt="breakfast 1"
               src={firstBreakfastImg}
             />
+            <img
+              alt="breakfast 2"
+              src={secondBreakfastImg}
+            />
           </Col>
-          <Col xs="6">
+          <Col xs="10" style={{paddingLeft: 16, paddingRight: 4}}>
             <div>
               <h3>{t('Breakfast')}</h3>
               <p>
@@ -28,12 +32,9 @@ function BreakfastSection() {
               </p>
             </div>
           </Col>
-          <Col xs="3">
-            <img
-              alt="breakfast picture 1"
-              src={secondBreakfastImg}
-            />
-          </Col>
+          {/* <Col xs="3" style={{paddingLeft: 0, paddingRight: 0}}>
+            
+          </Col> */}
         </Row>
       </Container>
     </div>

@@ -4,7 +4,7 @@ import React from "react";
 // core components
 import MainNavbar from "components/Navbars/MainNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
-import DarkFooter from "components/Footers/DarkFooter.js";
+import DarkFooter from "components/Footers/DarkFooter";
 
 // sections for this page
 import IntroSection from './sections/IntroSection';
@@ -25,16 +25,15 @@ function Index() {
       document.body.classList.remove("sidebar-collapse");
     };
   });
-  
+
   return (
     <>
       <MainNavbar asIndex />
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          {/* <Images /> */}
           <div id="intro-section">
-          <IntroSection />
+            <IntroSection />
           </div>
           <div id="rooms-section">
             <RoomsSection />
@@ -42,7 +41,7 @@ function Index() {
           <div id="breakfast-section">
             <BreakfastSection />
           </div>
-          
+
           <div id="seeanddo-section">
             <SeeAndDoSection />
           </div>

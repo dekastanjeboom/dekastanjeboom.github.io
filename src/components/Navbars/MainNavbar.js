@@ -19,7 +19,7 @@ import {
   UncontrolledTooltip
 } from "reactstrap";
 
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 
 function MainNavbar(props) {
@@ -101,6 +101,7 @@ function MainNavbar(props) {
                     <NavLink
                       onClick={e => {
                         e.preventDefault();
+                        document.documentElement.classList.toggle("nav-open");
                         document
                           .getElementById("intro-section")
                           .scrollIntoView();
@@ -114,6 +115,7 @@ function MainNavbar(props) {
                     <NavLink
                       onClick={e => {
                         e.preventDefault();
+                        document.documentElement.classList.toggle("nav-open");
                         document
                           .getElementById("breakfast-section")
                           .scrollIntoView();
@@ -128,6 +130,7 @@ function MainNavbar(props) {
                     <NavLink
                       onClick={e => {
                         e.preventDefault();
+                        document.documentElement.classList.toggle("nav-open");
                         document
                           .getElementById("seeanddo-section")
                           .scrollIntoView();
@@ -141,6 +144,7 @@ function MainNavbar(props) {
                     <NavLink
                       onClick={e => {
                         e.preventDefault();
+                        document.documentElement.classList.toggle("nav-open");
                         document
                           .getElementById("photos-section")
                           .scrollIntoView();
@@ -157,6 +161,7 @@ function MainNavbar(props) {
                       id="rooms-section-link"
                       onClick={e => {
                         e.preventDefault();
+                        document.documentElement.classList.toggle("nav-open");
                         document
                           .getElementById("rooms-section")
                           .scrollIntoView();
@@ -235,22 +240,29 @@ function MainNavbar(props) {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <p>{t('LanguageCodeUppercase')}</p>
+                  <p>{t('Language')} ({t('LanguageCodeUppercase')})</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem onClick={() => changeLanguage("en")}>
-                    EN
-                  </DropdownItem>
-                  <DropdownItem onClick={() => changeLanguage("nl")}>
+                  {t('LanguageCodeUppercase') !== 'EN' && (
+                    <DropdownItem onClick={() => changeLanguage("en")}>
+                      EN
+                    </DropdownItem>
+                  )}
+                  {t('LanguageCodeUppercase') !== 'NL' && (
+                    <DropdownItem onClick={() => changeLanguage("nl")}>
                     NL
                   </DropdownItem>
-
-                  <DropdownItem onClick={() => changeLanguage("de")}>
+                  )}
+                  {t('LanguageCodeUppercase') !== 'DE' && (
+                    <DropdownItem onClick={() => changeLanguage("de")}>
                     DE
                   </DropdownItem>
-                  <DropdownItem onClick={() => changeLanguage("fr")}>
+                  )}
+                  {t('LanguageCodeUppercase') !== 'FR' && (
+                    <DropdownItem onClick={() => changeLanguage("fr")}>
                     FR
                   </DropdownItem>
+                  )}
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

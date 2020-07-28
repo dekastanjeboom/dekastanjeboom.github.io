@@ -35,7 +35,7 @@ function SeeAndDoSection() {
       }],
     },
     {
-      title: 'Dining out',
+      title: t('Dining out'),
       img: diningImg,
       mainLink: '',
       otherLinks: [
@@ -64,7 +64,7 @@ function SeeAndDoSection() {
         </Row>
         <Row>
           {seeAndDoItems.map((item, i) => (
-            <Col md="3">
+            <Col md="6" key={i}>
               <Card>
                 <CardHeader>
                   <CardImg top width="100%" src={item.img} alt="Card image cap" />
@@ -84,13 +84,14 @@ function SeeAndDoSection() {
                   )}
 
                   {item.otherLinks && item.otherLinks.length > 0 && (
-                    <CardText>
-                      <ul>
-                        {item.otherLinks.map((linkItem) => (
-                          <li><a target="_blank" rel="noopener noreferrer" href={linkItem.link}>{linkItem.name}</a></li>
+
+                    <ul>
+                      <CardText>
+                        {item.otherLinks.map((linkItem, i) => (
+                          <li key={i}><a target="_blank" rel="noopener noreferrer" href={linkItem.link}>{linkItem.name}</a></li>
                         ))}
-                      </ul>
-                    </CardText>
+                      </CardText>
+                    </ul>
                   )}
                 </CardBody>
               </Card>
@@ -98,7 +99,7 @@ function SeeAndDoSection() {
           ))}
         </Row>
       </Container>
-    </div>
+    </div >
   );
 }
 

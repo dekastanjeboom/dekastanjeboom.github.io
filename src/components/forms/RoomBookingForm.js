@@ -30,8 +30,10 @@ function RoomBookingForm(props) {
       <Card className="card-plain">
         <CardHeader className="text-center">
         </CardHeader>
-        
+
         <CardBody>
+          <input hidden name="entry.1685089187" value={props.roomType} />
+          
           <InputGroup
             className={
               "no-border input-lg" +
@@ -89,7 +91,6 @@ function RoomBookingForm(props) {
                 </InputGroupAddon>
                 <Input
                   required
-                  name="???"
                   placeholder={t("From")}
                   type="text"
                   name="entry.1264566198"
@@ -122,8 +123,7 @@ function RoomBookingForm(props) {
             </Col>
           </Row>
 
-          <div class="form-group no-border input-md">
-            {/* <label for="exampleFormControlTextarea1">Adres</label> */}
+          <div class="form-group no-border input-md" style={{borderRadius: 20, overflow: 'hidden'}}>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder={t('Address')} name="entry.2138137815"></textarea>
           </div>
 
@@ -135,7 +135,7 @@ function RoomBookingForm(props) {
           >
             <InputGroupAddon addonType="prepend">
               <InputGroupText>
-              <i class="fas fa-globe-europe"></i>
+                <i class="fas fa-globe-europe"></i>
               </InputGroupText>
             </InputGroupAddon>
             <Input
@@ -148,8 +148,7 @@ function RoomBookingForm(props) {
             ></Input>
           </InputGroup>
 
-          <div class="form-group no-border input-md">
-            {/* <label for="exampleFormControlTextarea1">Adres</label> */}
+          <div class="form-group no-border input-md" style={{borderRadius: 20, overflow: 'hidden'}}>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder={t('Message')} name="entry.1443772620"></textarea>
           </div>
 
@@ -160,8 +159,6 @@ function RoomBookingForm(props) {
             className="btn-round"
             color="info"
             type="submit"
-            // href="#pablo"
-            // onClick={e => e.preventDefault()}
             size="lg"
           >
             {t('Book room')}

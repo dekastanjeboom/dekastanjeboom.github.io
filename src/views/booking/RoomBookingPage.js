@@ -53,22 +53,8 @@ class RoomBookingPage extends React.Component {
   }
 
   render() {
-    // const [firstFocus, setFirstFocus] = React.useState(false);
-    // const [lastFocus, setLastFocus] = React.useState(false);
-    // const [iconPills, setIconPill] = React.useState("1");
-
-    // React.useEffect(() => {
-
-
-
-
-    //   return function cleanup() {
-
-    //   };
-    // });
-    const { t } = this.props;
-
-    const urlChunks = this.props.location.pathname.split('/');
+    const { t, location } = this.props;
+    const urlChunks = location.pathname.split('/');
     const roomType = urlChunks[urlChunks.length - 1];
 
     return (
@@ -123,7 +109,7 @@ class RoomBookingPage extends React.Component {
 
                   </Nav>
                 </CardHeader>
-                <CardBody>
+                <CardBody style={{ paddingLeft: 0, paddingRight: 0 }}>
                   <TabContent
                     className="text-center"
                     activeTab={"iconPills" + this.state.iconPill}
@@ -131,54 +117,68 @@ class RoomBookingPage extends React.Component {
                     <TabPane tabId="iconPills1">
                       <Container>
                         <Row className="mb-2">
-                          <Col xs="3" className="text-right">
+                          <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
                             <b>{t('Info')}</b>
                           </Col>
-                          <Col xs="9" className="text-left">
-                            {roomInfo[roomType]}
-                      </Col>
+                          <Col xs="7" className="text-left">
+                            {t(roomInfo[roomType])}
+                          </Col>
                         </Row>
                         <Row className="mb-2">
-                          <Col xs="3" className="text-right">
+                          <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
                             <b>{t('Amenities')}</b>
                           </Col>
-                          <Col xs="9" className="text-left">
+                          <Col xs="7" className="text-left">
+
                             {roomType && roomType !== '' && (
-                              <ul style={{ listStyleType: 'none' }}>
+                              <ul style={{ listStyleType: 'none', paddingLeft: 16 }}>
                                 {amenities
                                   .filter((a, i) => amenityAvailability[roomType][i])
                                   .map((amenityObj) => (
-                                    <li key={amenityObj.name} style={{ position: 'relative' }}><i className={`fa-li ${amenityObj.iconClassName}`} />{amenityObj.name}</li>
+                                    <li key={amenityObj.name} style={{ position: 'relative' }}>
+                                      {amenityObj.iconClassName
+                                        ? <i className={`fa-li ${amenityObj.iconClassName}`} />
+                                        : <i className={`fa-li fa-circle`} />}
+                                      {t(amenityObj.name)}</li>
                                   ))}
                               </ul>
                             )}
                           </Col>
                         </Row>
                         <Row className="mb-2">
-                          <Col xs="3" className="text-right">
-                            <b>{t('Price per night')}</b>
-                          </Col>
-                          <Col xs="9" className="text-left">
-                            <span>€{roomPricesPerNight[roomType]}</span>
-                          </Col>
-                        </Row>
-                        <Row className="mb-2">
-                          <Col xs="3" className="text-right">
+                          <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
                             <b>{t('Check-in and out')}</b>
                           </Col>
-                          <Col xs="9" className="text-left">
+                          <Col xs="7" className="text-left">
                             <div>{t('Check-in from 5pm')}</div>
                             <div>{t('Check-out until 11am')}</div>
                           </Col>
                         </Row>
                         <Row className="mb-2">
-                          <Col xs="3" className="text-right">
+                          <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
                             <b>{t('Minimum reservation')}</b>
                           </Col>
-                          <Col xs="9" className="text-left">
+                          <Col xs="7" className="text-left">
                             <span>{t('Two nights')}</span>
                           </Col>
                         </Row>
+                        {/* <Row className="mb-2">
+                          <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
+                            <b>{t('Price per night during the week')}</b>
+                          </Col>
+                          <Col xs="7" className="text-left">
+                            <span>€{roomPricesPerNight[roomType]}</span>
+                          </Col>
+                        </Row>
+                        <Row className="mb-2">
+                          <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
+                            <b>{t('Price per night during weekends and school holidays')}</b>
+                          </Col>
+                          <Col xs="7" className="text-left">
+                            <span>€{Number(roomPricesPerNight[roomType]) + Number(process.env.REACT_APP_PRICE_INCREASE_PER_ROOM_WEEKEND_HOLIDAYS)}</span>
+                          </Col>
+                        </Row> */}
+
                       </Container>
                     </TabPane>
                     <TabPane tabId="iconPills2">
@@ -204,8 +204,18 @@ class RoomBookingPage extends React.Component {
             <Container>
 
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h3>{bookingTitle[roomType]}</h3>
-                <RoomBookingForm roomType="standard" />
+                <h3 className="mb-2">{bookingTitle[roomType]}</h3>
+                <div>
+                  <span className="mb-0">€{roomPricesPerNight[roomType]} {t('per night')}</span>
+                </div>
+
+                <div>
+                  <span
+                    className="mb-3 text-muted"
+                  >€{Number(roomPricesPerNight[roomType]) + Number(process.env.REACT_APP_PRICE_INCREASE_PER_ROOM_WEEKEND_HOLIDAYS)} {t('per night during the weekends (friday-, saterday- or sundaynight) or school holidays.')}
+                  </span>
+                </div>
+                <RoomBookingForm roomType={roomType} />
               </Col>
 
             </Container>

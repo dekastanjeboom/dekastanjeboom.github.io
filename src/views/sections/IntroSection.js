@@ -31,7 +31,7 @@ function IntroSection() {
             </p>
           </Col>
           <Col xs="12" sm="6" md="4" className="text-center">
-            <img style={{ display: 'inline' }} src={materFamiliasImg} />
+            <img alt="owner" style={{ display: 'inline' }} src={materFamiliasImg} />
           </Col>
         </Row>
       </Container>

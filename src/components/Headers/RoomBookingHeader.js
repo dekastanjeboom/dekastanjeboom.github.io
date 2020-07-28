@@ -6,21 +6,21 @@ import {
   Container,
   Col,
   Row,
-  Card,
+  // Card,
   Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption,
-  CardBody,
-  CardText,
-  CardHeader,
-  TabPane,
-  TabContent,
-  Nav,
-  NavItem,
-  NavLink,
-  Button
+  // CarouselCaption,
+  // CardBody,
+  // CardText,
+  // CardHeader,
+  // TabPane,
+  // TabContent,
+  // Nav,
+  // NavItem,
+  // NavLink,
+  // Button
 } from "reactstrap";
 import houseSideImg from 'assets/img/house_side.webp';
 import { ROOM_DETAIL_URL_NAME, roomNames, roomImages } from 'utils/rooms';
@@ -97,7 +97,7 @@ function RoomBookingHeader({ roomType, onRoomSelection }) {
         ></div>
         <Container>
           <Col className="ml-auto mr-auto" md="4">
-            <h2 style={{ marginBottom: 8 }}>{roomNames[roomType]}</h2>
+            <h2 style={{ marginBottom: 8 }}>{t(roomNames[roomType])}</h2>
             <a
               onClick={() => {
                 if (roomType !== 'standard') {

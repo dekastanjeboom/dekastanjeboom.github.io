@@ -2,8 +2,8 @@ import React from "react";
 import { useTranslation } from 'react-i18next';
 
 // reactstrap components
-import { Container, Row, Col, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button, Link } from "reactstrap";
-import { STANDARD_ROOM, DELUXE_ROOM } from '../../utils/rooms';
+import { Container, Row, Col, Card, CardImg, CardBody, CardTitle, CardText } from "reactstrap";
+// import { STANDARD_ROOM, DELUXE_ROOM } from '../../utils/rooms';
 import { roomTypes, roomDescriptions, roomPricesPerNight, roomImages, ROOM_DETAIL_URL_NAME } from '../../utils/rooms'
 
 // core components
@@ -22,21 +22,16 @@ function RoomsSection() {
         </Row>
         <Row>
           {roomTypes.map((roomType, i) => (
-            <Col md="6" className="text-center">
+            <Col md="6" className="text-center" key={i}>
               <Card>
                 <CardImg top width="100%" src={roomImages[roomType].length > 0 ? roomImages[roomType][0] : ''} alt="Card image cap" />
                 <CardBody>
-                  <CardTitle>{roomDescriptions[roomType]}</CardTitle>
+                  <CardTitle>{t(roomDescriptions[roomType])}</CardTitle>
                   {/* <CardSubtitle></CardSubtitle> */}
                   <CardText>
-                    {/* <div>
-                      <sub>Vanaf</sub>
-                    </div> */}
-                    <div>€{roomPricesPerNight[roomType]}
-                    </div>
-                    <div>
-                      <sup>{t('per night')}</sup>
-                    </div>
+                    <span style={{ display: 'block' }}>€{roomPricesPerNight[roomType]}</span>
+                    <sup style={{ display: 'block', lineHeight: '15px' }}>{t('per night')}</sup>
+                    <small style={{ lineHeight: '15px', display: 'block' }}>€{Number(roomPricesPerNight[roomType]) + Number(process.env.REACT_APP_PRICE_INCREASE_PER_ROOM_WEEKEND_HOLIDAYS)}&nbsp;{t('per night')}&nbsp;{t('during weekends and school holidays')}</small>
                   </CardText>
                   <a
                     href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}/${roomType}`}
@@ -48,7 +43,7 @@ function RoomsSection() {
             </Col>
           ))}
         </Row>
-        
+
       </Container>
     </div>
   );
