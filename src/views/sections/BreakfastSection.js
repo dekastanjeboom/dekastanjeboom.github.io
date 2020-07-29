@@ -11,7 +11,7 @@ function BreakfastSection() {
     <div className="section">
       <Container>
         <Row>
-          <Col xs="2" style={{paddingLeft: 0, paddingRight: 0}}>
+          <Col xs="2" md="1" style={{paddingLeft: 0, paddingRight: 0}}>
             <img
               alt="breakfast 1"
               src={firstBreakfastImg}
@@ -21,7 +21,7 @@ function BreakfastSection() {
               src={secondBreakfastImg}
             />
           </Col>
-          <Col xs="10" style={{paddingLeft: 16, paddingRight: 4}}>
+          <Col xs="10" md="11" style={{paddingLeft: 16, paddingRight: 4}}>
             <div>
               <h3>{t('Breakfast')}</h3>
               <p>

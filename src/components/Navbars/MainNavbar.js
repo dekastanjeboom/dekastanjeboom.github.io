@@ -240,7 +240,7 @@ function MainNavbar(props) {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <p>{t('Language')} ({t('LanguageCodeUppercase')})</p>
+                  <p>{t('Language')} · {t('LanguageCodeUppercase')}</p>
                 </DropdownToggle>
                 <DropdownMenu>
                   {t('LanguageCodeUppercase') !== 'EN' && (
