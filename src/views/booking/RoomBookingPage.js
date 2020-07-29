@@ -204,7 +204,7 @@ class RoomBookingPage extends React.Component {
             <Container>
 
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h3 className="mb-2">{bookingTitle[roomType]}</h3>
+                <h3 className="mb-2">{t(bookingTitle[roomType])}</h3>
                 <div>
                   <span className="mb-0">€{roomPricesPerNight[roomType]} {t('per night')}</span>
                 </div>

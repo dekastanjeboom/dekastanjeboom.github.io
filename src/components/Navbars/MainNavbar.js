@@ -155,8 +155,9 @@ function MainNavbar(props) {
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <Button
-                      className="nav-link btn-neutral"
+                    <NavLink
+                    // <Button
+                      // className="nav-link btn-neutral"
                       color="info"
                       id="rooms-section-link"
                       onClick={e => {
@@ -169,7 +170,8 @@ function MainNavbar(props) {
                     >
                       {/* <i className="now-ui-icons arrows-1_share-66 mr-1"></i> */}
                       <p>{t('Book a room')}</p>
-                    </Button>
+                    {/* </Button> */}
+                    </NavLink>
                     <UncontrolledTooltip target="#rooms-section-link">
                       {t('Take a look at our rooms')}
                     </UncontrolledTooltip>
@@ -191,24 +193,21 @@ function MainNavbar(props) {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <p>{t('Rooms')}</p>
+                  <p>{t('Our rooms')}</p>
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem to={`${process.env.PUBLIC_URL}/rooms/standard`} tag={Link}>
-                    {/* <i className="now-ui-icons business_chart-pie-36 mr-1"></i> */}
                     {t('Standard')}
                   </DropdownItem>
                   <DropdownItem to={`${process.env.PUBLIC_URL}/rooms/deluxe`} tag={Link}>
-                    {/* <i className="now-ui-icons business_chart-pie-36 mr-1"></i> */}
                     {t('Deluxe')}
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
 
-
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/www.dekastanjeboom.be/"
+                  href={process.env.REACT_APP_FACEBOOK_LINK}
                   target="_blank"
                   id="facebook-tooltip"
                 >
@@ -221,7 +220,7 @@ function MainNavbar(props) {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.tripadvisor.nl/Hotel_Review-g641828-d1845275-Reviews-De_Kastanjeboom-Jabbeke_West_Flanders_Province.html#REVIEWS"
+                  href={process.env.REACT_APP_TRIPADVISOR_LINK}
                   target="_blank"
                   id="instagram-tooltip"
                 >
