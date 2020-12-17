@@ -62,7 +62,10 @@ function MainNavbar(props) {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
+      <Navbar 
+      fixed={'top'}
+      className={navbarColor} 
+      expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
@@ -169,7 +172,7 @@ function MainNavbar(props) {
                       }}
                     >
                       {/* <i className="now-ui-icons arrows-1_share-66 mr-1"></i> */}
-                      <p>{t('Book a room')}</p>
+                      <p>{t('Our rooms')}</p>
                     {/* </Button> */}
                     </NavLink>
                     <UncontrolledTooltip target="#rooms-section-link">
@@ -193,7 +196,7 @@ function MainNavbar(props) {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <p>{t('Our rooms')}</p>
+                  <p>{t('Book a room')}</p>
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem to={`${process.env.PUBLIC_URL}/rooms/standard`} tag={Link}>
@@ -239,7 +242,7 @@ function MainNavbar(props) {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <p>{t('Language')} · {t('LanguageCodeUppercase')}</p>
+                  <p>{t('LanguageCodeUppercase')}</p>
                 </DropdownToggle>
                 <DropdownMenu>
                   {t('LanguageCodeUppercase') !== 'EN' && (
