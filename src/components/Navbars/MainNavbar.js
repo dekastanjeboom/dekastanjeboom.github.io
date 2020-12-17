@@ -62,19 +62,20 @@ function MainNavbar(props) {
           }}
         />
       ) : null}
-      <Navbar 
-      fixed={'top'}
-      className={navbarColor} 
-      expand="lg" color="info">
+      <Navbar
+        fixed={'top'}
+        className={navbarColor}
+        expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href={process.env.PUBLIC_URL + '/'}
-              // target="_blank"
+              tag={Link}
+              to={process.env.PUBLIC_URL + '/'}
               id="navbar-brand"
             >
               De kastanjeboom
             </NavbarBrand>
+
             <UncontrolledTooltip target="#navbar-brand">
               {t('Bed & Breakfast')}
             </UncontrolledTooltip>
@@ -159,7 +160,7 @@ function MainNavbar(props) {
                   </NavItem>
                   <NavItem>
                     <NavLink
-                    // <Button
+                      // <Button
                       // className="nav-link btn-neutral"
                       color="info"
                       id="rooms-section-link"
@@ -173,7 +174,7 @@ function MainNavbar(props) {
                     >
                       {/* <i className="now-ui-icons arrows-1_share-66 mr-1"></i> */}
                       <p>{t('Our rooms')}</p>
-                    {/* </Button> */}
+                      {/* </Button> */}
                     </NavLink>
                     <UncontrolledTooltip target="#rooms-section-link">
                       {t('Take a look at our rooms')}
@@ -252,18 +253,18 @@ function MainNavbar(props) {
                   )}
                   {t('LanguageCodeUppercase') !== 'NL' && (
                     <DropdownItem onClick={() => changeLanguage("nl")}>
-                    NL
-                  </DropdownItem>
+                      NL
+                    </DropdownItem>
                   )}
                   {t('LanguageCodeUppercase') !== 'DE' && (
                     <DropdownItem onClick={() => changeLanguage("de")}>
-                    DE
-                  </DropdownItem>
+                      DE
+                    </DropdownItem>
                   )}
                   {t('LanguageCodeUppercase') !== 'FR' && (
                     <DropdownItem onClick={() => changeLanguage("fr")}>
-                    FR
-                  </DropdownItem>
+                      FR
+                    </DropdownItem>
                   )}
                 </DropdownMenu>
               </UncontrolledDropdown>
