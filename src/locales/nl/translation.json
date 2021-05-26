@@ -11,9 +11,9 @@
   "Find us on Facebook": "Vind ons op Facebook",
   "Watch our reviews on Tripadvisor": "Bekijk onze reviews op Tripadvisor",
   "LanguageCodeUppercase": "NL",
-  "In a newly furnished home, located in a quiet and green neighbourhood, two cosy guestrooms were set up. The house is located in Jabbeke, in between Oostende en Brugge, twelve kilometer off the coast (exit 6 of the E40 highway).": "In een nieuw ingericht huis, gelegen in een rustige groene buurt werden twee gezellige gastenkamers ingericht. Het huis is gelegen te Jabbeke, halfweg tussen Oostende en Brugge, op twaalf kilometer van de kust (afrit 6 van de E40 snelweg).",
-  "You'll be received friendly by Greet. In the morning, you can enjoy a well catered and delicious meal. A comprehensive, touristy informationpacket will be waiting for you.": "U wordt er vriendelijk onthaald door Greet. 's Morgens geniet u van een heerlijk en verzorgd ontbijt. Een uitgebreid toeristisch informatiepakket is ter beschikking van de gasten.",
-  "It's an ideal starting point for biking routes and trips.": "Het is een ideaal vertrekpunt voor uitstappen en fietsroutes.",
+  
+  "[initial_welcome_message]": "In een nieuw ingericht huis, gelegen in een rustige groene buurt werden twee gezellige gastenkamers ingericht. Het huis is gelegen te Jabbeke, halfweg tussen Oostende en Brugge, op twaalf kilometer van de kust (afrit 6 van de E40 snelweg). U wordt er vriendelijk onthaald door Greet. 's Morgens geniet u van een heerlijk en verzorgd ontbijt. Een uitgebreid toeristisch informatiepakket is ter beschikking van de gasten. Het is een ideaal vertrekpunt voor uitstappen en fietsroutes.",
+  
   "Our rooms": "Onze kamers",
   "You can choose between two rooms. Both rooms are adjoined by a bathroom with toilet, shower and sink. The rooms also have a TV, fridge and wireless internet.": "Je kan kiezen tussen twee kamers. Beide kamers zijn vergezeld van een badkamer met toilet, douche and lavabo. Elke kamer heeft ook een TV, frigo and draadloos internet.",
   "More info": "Meer info",
@@ -27,12 +27,13 @@
   "Hairdryer": "Haardroger",
   "Silent fridge": "Stille frigo",
   "Terras": "Terras",
-  "The room has two single beds and a sofa bed (for one extra person) available. This room has a private bathroom downstairs.": "De kamer heeft twee enkele bedden en een zetelbed (voor een extra persoon). Deze mamer heeft een prive badkamer beneden.",
-  "The room has one double and a sofa bed ( for 1 extra person) available. This room has a private bathroom in the room and access to a terrace.": "De kamer heeft een dubbelbed en een zetelbed (voor een extra persoon). Verder is er nog een prive badkamer en een directe aansluiting met een terras.",
+  "The room has two single beds and a sofa bed (for one extra person) available. This room has a private bathroom downstairs.": "De kamer heeft twee enkele bedden en een zetelbed (voor een extra persoon). Deze kamer heeft een prive badkamer beneden.",
+  "The room has one double and a sofa bed ( for 1 extra person) available. This room has a private bathroom in the room and access to a terrace.": "De kamer heeft een dubbelbed en een zetelbed (voor een extra persoon). Verder is er nog een prive badkamer en een terras.",
   "Book a standard room": "Boek een standaardkamer",
   "Book a deluxe room": "Boek een deluxekamer",
-  "Extensive breakfast with regional products. Freshly baked bread. Self-made jam. Honey. Eggs as you want them. Charcuterie and cheeses. Freshly squeezed orange- or applejuice. Fresh fruit, yoghurt, breads, pastries, coffee, tea or chocolate milk.": "Uitgebreid ontbijt met streekproducten. Verse gebakken brood. Zelf-gemaakte confituur. Honing. Eieren zoals je ze graag hebt. Charcuterie en kaas. Vers geperst sinaasappel- en appelsap. Vers fruit, yoghurt, broodjes, koffiekoeken, koffie, thee or chocomelk.",
-  "Breakfast between 8u30 and 10u. Outside on the terras, with nice weather.": "Ontbijt tussen 8u30 en 10u. Bij mooi weer, buiten op het terras.",
+
+  "[breakfast_message]": "Uitgebreid ontbijt met streekproducten. Verse gebakken brood. Zelf-gemaakte confituur. Honing. Eieren zoals je ze graag hebt. Charcuterie en kaas. Vers geperst sinaasappel- en appelsap. Vers fruit, yoghurt, broodjes, koffiekoeken, koffie, thee or chocomelk. Ontbijt tussen 8u30 en 10u. Bij mooi weer, buiten op het terras.",
+
   "Visit Bruge": "Bezoek Brugge",
   "Cycling in the countryside near Bruge": "Fietsen in het Brugse ommeland",
   "Visit the coast": "Bezoek de kust",

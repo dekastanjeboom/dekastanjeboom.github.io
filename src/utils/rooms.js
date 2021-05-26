@@ -63,6 +63,10 @@ export const amenities = [
     iconClassName: 'fas fa-bed'
   },
   {
+    name: 'Airco',
+    iconClassName: '',
+  },
+  {
     name: 'Towels',
     iconClassName: '',
   },

@@ -136,9 +136,9 @@ class RoomBookingPage extends React.Component {
                                   .filter((a, i) => amenityAvailability[roomType][i])
                                   .map((amenityObj) => (
                                     <li key={amenityObj.name} style={{ position: 'relative' }}>
-                                      {amenityObj.iconClassName
+                                      {amenityObj.iconClassName !== ''
                                         ? <i className={`fa-li ${amenityObj.iconClassName}`} />
-                                        : <i className={`fa-li fa-circle`} />}
+                                        : <i className={`fa-li fas fa-check`} />}
                                       {t(amenityObj.name)}</li>
                                   ))}
                               </ul>

@@ -4,9 +4,9 @@ import { withTranslation } from 'react-i18next';
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
 
+const gmapsEmbededMapURL = 'https://maps.google.com/maps?q=Kastanjebosstraat%2019%208490%20Jabbeke%20(Belgium)&t=&z=13&ie=UTF8&iwloc=&output=embed';
 
-function DarkFooter({ t }) {
-  const gmapsEmbededMapURL = 'https://maps.google.com/maps?q=Kastanjebosstraat%2019%208490%20Jabbeke%20(Belgium)&t=&z=13&ie=UTF8&iwloc=&output=embed';
+function DarkFooter({ t }) {  
   return (
     <footer className="footer" data-background-color="black">
       <Container style={{ paddingLeft: 4, paddingRight: 4 }}>

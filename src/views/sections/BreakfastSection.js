@@ -24,12 +24,8 @@ function BreakfastSection() {
           <Col xs="10" md="11" style={{paddingLeft: 16, paddingRight: 4}}>
             <div>
               <h3>{t('Breakfast')}</h3>
-              <p>
-                {t('Extensive breakfast with regional products. Freshly baked bread. Self-made jam. Honey. Eggs as you want them. Charcuterie and cheeses. Freshly squeezed orange- or applejuice. Fresh fruit, yoghurt, breads, pastries, coffee, tea or chocolate milk.')}
-              </p>
-              <p>
-                {t('Breakfast between 8u30 and 10u. Outside on the terras, with nice weather.')}
-              </p>
+              <p>{t('[breakfast_message]')}</p>
+
             </div>
           </Col>
           {/* <Col xs="3" style={{paddingLeft: 0, paddingRight: 0}}>
