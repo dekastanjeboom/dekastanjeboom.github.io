@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b607a7eb930ae28c91cab0330a4bd0a1",
+    "revision": "93b9f08bb919f9aabd904aadfe218b2c",
     "url": "/index.html"
   },
   {
-    "revision": "35958bc2621fdb991121",
+    "revision": "ec7fd3be4169dc4c8a85",
     "url": "/static/css/main.9682ee93.chunk.css"
   },
   {
-    "revision": "520dba0f22ba8ddc5e06",
-    "url": "/static/js/2.3ba5a7d4.chunk.js"
+    "revision": "5eae218a0847abe3125b",
+    "url": "/static/js/2.bd2e0660.chunk.js"
   },
   {
-    "revision": "35958bc2621fdb991121",
-    "url": "/static/js/main.c440eba2.chunk.js"
+    "revision": "ec7fd3be4169dc4c8a85",
+    "url": "/static/js/main.4e9c8e90.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -60,8 +60,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/deluxe_terras.9c834760.jpg"
   },
   {
-    "revision": "122c578243d0f0acb2b2e5e290777198",
-    "url": "/static/media/dining.122c5782.webp"
+    "revision": "87e67c3fe995d9c5dc12167961cb015a",
+    "url": "/static/media/hoekske.87e67c3f.jpg"
   },
   {
     "revision": "41cfe5d50f8fa81134cfaff3e7696ca7",
