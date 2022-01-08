@@ -12,7 +12,6 @@ import {
 } from "reactstrap";
 
 import i1 from 'assets/img/dkb_decoratie_1.webp';
-import i2 from 'assets/img/dkb_fietsen_1.webp';
 import i3 from 'assets/img/dkb_fietsen_2.webp';
 import i4 from 'assets/img/dkb_fietsen_3.webp';
 import i5 from 'assets/img/dkb_huis_1.webp';
@@ -26,7 +25,6 @@ import i11 from 'assets/img/dkb_omgeving_1.webp';
 import i12 from 'assets/img/dkb_omgeving_2.webp';
 import i13 from 'assets/img/dkb_omgeving_3.webp';
 import i14 from 'assets/img/dkb_omgeving_4.webp';
-import i15 from 'assets/img/dkb_tuin_1.webp';
 import i16 from 'assets/img/dkb_tuin_2.webp';
 import i17 from 'assets/img/dkb_tuin_3.webp';
 
@@ -37,7 +35,6 @@ import o3 from '../../assets/img/dkb_ontbijt_3.webp';
 import o4 from '../../assets/img/dkb_ontbijt_4.webp';
 import o5 from '../../assets/img/dkb_ontbijt_5.webp';
 import o6 from '../../assets/img/dkb_ontbijt_6.webp';
-import o7 from '../../assets/img/dkb_ontbijt_7.webp';
 import o8 from '../../assets/img/dkb_ontbijt_8.webp';
 import o9 from '../../assets/img/dkb_ontbijt_9.webp';
 import o10 from '../../assets/img/dkb_ontbijt_10.webp';
@@ -49,7 +46,7 @@ import o15 from '../../assets/img/dkb_ontbijt_15.webp';
 
 
 function PhotosSection() {
-  const imageUrls = [i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12, i13, i14, i15, i16, i17, i18, o1, o2, o3, o4, o5, o6, o7, o8, o9, o10, o11, o12, o13, o15];
+  const imageUrls = [i1, i5, i6, i3, i4, i7, i8, i9, i10, i11, i12, i13, i14, i16, i17, i18, o1, o2, o3, o4, o5, o6, o8, o9, o10, o11, o12, o13, o15];
 
   const { t } = useTranslation();
 

@@ -6,7 +6,6 @@ import o2 from '../../assets/img/dkb_ontbijt_2.webp';
 import o4 from '../../assets/img/dkb_ontbijt_4.webp';
 // import o5 from '../../assets/img/dkb_ontbijt_5.webp';
 // import o6 from '../../assets/img/dkb_ontbijt_6.webp';
-// import o7 from '../../assets/img/dkb_ontbijt_7.webp';
 // import o8 from '../../assets/img/dkb_ontbijt_8.webp';
 // import o9 from '../../assets/img/dkb_ontbijt_9.webp';
 // import o10 from '../../assets/img/dkb_ontbijt_10.webp';
