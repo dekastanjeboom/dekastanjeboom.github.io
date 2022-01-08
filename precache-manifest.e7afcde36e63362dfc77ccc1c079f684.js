@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e766c00ec850402fe1ef52892be66a9",
+    "revision": "e5198c4a0782ef5b24f418bf04829ee4",
     "url": "/index.html"
   },
   {
-    "revision": "e4c27f3d241077bc4943",
+    "revision": "3f8723ffcf7d0da81876",
     "url": "/static/css/main.8e3b7ee7.chunk.css"
   },
   {
-    "revision": "3d8788f8e4cf4f488fbd",
-    "url": "/static/js/2.003da8b6.chunk.js"
+    "revision": "2755a4e009c0ac86d301",
+    "url": "/static/js/2.c3a12914.chunk.js"
   },
   {
-    "revision": "e4c27f3d241077bc4943",
-    "url": "/static/js/main.ca5e06dc.chunk.js"
+    "revision": "3f8723ffcf7d0da81876",
+    "url": "/static/js/main.578efbb5.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dkb_brugge_1.1d7a3be6.webp"
   },
   {
-    "revision": "69885bc3762686216a7c0fc9a59b7236",
-    "url": "/static/media/dkb_decoratie_1.69885bc3.webp"
+    "revision": "f9ac2542b4355d958743f4b30ce429f3",
+    "url": "/static/media/dkb_decoratie_1.f9ac2542.webp"
   },
   {
     "revision": "bde50d624e7cb67caa307db59753e1fa",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dkb_downtown_1.9ae8e80b.webp"
   },
   {
-    "revision": "8858d861262adcf8d4c9d0883ffa70b4",
-    "url": "/static/media/dkb_downtown_2.8858d861.webp"
+    "revision": "a674ffa4ba478cecd82a46d1ef98669d",
+    "url": "/static/media/dkb_downtown_2.a674ffa4.webp"
   },
   {
     "revision": "648e01582023ac48a9a2b6c4fc580271",
@@ -56,10 +56,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dkb_downtown_5.93b6219b.webp"
   },
   {
-    "revision": "55947925c488c1aca84c9036a3d13870",
-    "url": "/static/media/dkb_fietsen_1.55947925.webp"
-  },
-  {
     "revision": "98b5bcedfc8e789fab7f949d5dc92ea7",
     "url": "/static/media/dkb_fietsen_2.98b5bced.webp"
   },
@@ -72,8 +68,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dkb_greet.aa6bb0f6.webp"
   },
   {
-    "revision": "41cfe5d50f8fa81134cfaff3e7696ca7",
-    "url": "/static/media/dkb_huis_1.41cfe5d5.webp"
+    "revision": "fec9d5f2e4bb81505b237e9787de2863",
+    "url": "/static/media/dkb_huis_1.fec9d5f2.webp"
   },
   {
     "revision": "1e4c90343cc6c1085149b4bf89d5927f",
@@ -88,8 +84,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dkb_huis_4.c2952e40.webp"
   },
   {
-    "revision": "9676e252d8741b9c65b6541cdee84b85",
-    "url": "/static/media/dkb_huis_5.9676e252.webp"
+    "revision": "a1e366fd417b22b3098a8e743301e6b5",
+    "url": "/static/media/dkb_huis_5.a1e366fd.webp"
   },
   {
     "revision": "880c3f252e25d5a02f5ce70c62143129",
@@ -104,8 +100,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dkb_kust_2.8c99788f.webp"
   },
   {
-    "revision": "853e002366926d2fb69efd2745db06e9",
-    "url": "/static/media/dkb_omgeving_1.853e0023.webp"
+    "revision": "d15f76eb196d26819c0d5d33363b1292",
+    "url": "/static/media/dkb_omgeving_1.d15f76eb.webp"
   },
   {
     "revision": "4b700861960d8913cdbb4f5d96de3d32",
@@ -164,20 +160,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dkb_ontbijt_6.a03b3cfe.webp"
   },
   {
-    "revision": "e49a4c2fb9f4a2ccbb4f8704be85de7b",
-    "url": "/static/media/dkb_ontbijt_7.e49a4c2f.webp"
-  },
-  {
     "revision": "10b0181f685a321b3b0affa48725c9b2",
     "url": "/static/media/dkb_ontbijt_8.10b0181f.webp"
   },
   {
     "revision": "41cec4d7edf72842c457294b48054cd3",
     "url": "/static/media/dkb_ontbijt_9.41cec4d7.webp"
-  },
-  {
-    "revision": "2f4d9b35ea8cfd453e0ceddc4e5f9bcd",
-    "url": "/static/media/dkb_tuin_1.2f4d9b35.webp"
   },
   {
     "revision": "9cdcff7d5af2d1e25d4f45232d323e6e",
