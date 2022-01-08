@@ -176,7 +176,7 @@ class RoomBookingPage extends React.Component {
                     </TabPane>
                     <TabPane tabId="iconPills2">
                       <ul style={{ listStyleType: 'none' }}>
-                        <li>{t('Minimumreservation: 2 nights')}</li>
+                        <li>{t('Minimumreservation of two nights')}</li>
                         <li>{t('Non-smokers')}</li>
                         <li>{t('Pets not allowed')}</li>
                         <li>{t('Cash payment')}</li>
