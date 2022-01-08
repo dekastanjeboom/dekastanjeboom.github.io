@@ -183,7 +183,7 @@ function MainNavbar(props) {
               ) : (
                 <NavItem>
                   <NavLink
-                    href={`${process.env.PUBLIC_URL}/`}
+                    to={`${process.env.PUBLIC_URL}/`} tag={Link}
                   >
                     <p>Info</p>
                   </NavLink>

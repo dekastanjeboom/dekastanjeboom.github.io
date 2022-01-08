@@ -1,7 +1,7 @@
 {
   "name": "dkb",
   "homepage": "http://dekastanjeboom.github.io",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "private": true,
   "dependencies": {
     "i18next": "^19.4.5",
