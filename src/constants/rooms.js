@@ -1,9 +1,11 @@
-import standardRoomOverviewImg from '../assets/img/rooms/standard/standard_overview.jpg';
-import standardRoomBathroomImg from '../assets/img/rooms/standard/standard_bathroom.jpg';
+import u1 from '../assets/img/dkb_uptown_1.webp';
+import u2 from '../assets/img/dkb_uptown_2.webp';
 
-import deluxeRoomOverviewImg from '../assets/img/rooms/deluxe/deluxe_overview.jpg';
-import deluxeRoomTerrasImg from '../assets/img/rooms/deluxe/deluxe_terras.jpg';
-import deluxeRoomBathroomImg from '../assets/img/rooms/deluxe/deluxe_bathroom.jpg';
+import d1 from '../assets/img/dkb_downtown_1.webp';
+import d2 from '../assets/img/dkb_downtown_2.webp';
+import d3 from '../assets/img/dkb_downtown_3.webp';
+import d4 from '../assets/img/dkb_downtown_4.webp';
+import d5 from '../assets/img/dkb_downtown_5.webp';
 
 export const ROOM_DETAIL_URL_NAME = 'rooms';
 
@@ -36,8 +38,8 @@ export const roomDescriptions = {
 }
 
 export const roomImages = {
-  [STANDARD_ROOM]: [standardRoomOverviewImg, standardRoomBathroomImg],
-  [DELUXE_ROOM]: [deluxeRoomOverviewImg, deluxeRoomTerrasImg, deluxeRoomBathroomImg],
+  [STANDARD_ROOM]: [u1, u2],
+  [DELUXE_ROOM]: [d1, d2, d3, d4, d5],
 }
 
 

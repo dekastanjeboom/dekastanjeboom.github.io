@@ -21,3 +21,10 @@
   height: 100;
   width:200;
 }
+
+.carousel-item > img {
+  // width: 100%; 
+  // max-height: 660px; // New addition to avoid hidden images
+  // width: auto;
+  // margin: auto;
+}

@@ -6,6 +6,7 @@ import { Container, Row, Col, Card, CardImg, CardBody, CardTitle, CardText } fro
 // import { STANDARD_ROOM, DELUXE_ROOM } from '../../constants/rooms';
 import { roomTypes, roomDescriptions, roomPricesPerNight, roomImages, ROOM_DETAIL_URL_NAME } from '../../constants/rooms';
 
+
 // core components
 
 function RoomsSection() {
@@ -37,7 +38,6 @@ function RoomsSection() {
                     href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}/${roomType}`}
                     className="btn"
                   >{t('More info')}</a>
-
                 </CardBody>
               </Card>
             </Col>

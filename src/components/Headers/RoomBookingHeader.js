@@ -10,7 +10,8 @@ import {
   CarouselControl,
   CarouselIndicators,
 } from "reactstrap";
-import houseSideImg from 'assets/img/house-outside/house_side.webp';
+import bgimg from "assets/img/dkb_huis_2.webp";
+
 import { ROOM_DETAIL_URL_NAME, roomNames, roomImages, STANDARD_ROOM, DELUXE_ROOM } from 'constants/rooms';
 
 
@@ -62,7 +63,7 @@ function RoomBookingHeader({ roomType, onRoomSelection }) {
         onExited={() => setAnimating(false)}
         key={i}
       >
-        <img src={imgUrl} alt={`room_img_${i}`} />
+        <img src={imgUrl} alt={`room_img_${i}`} style={{maxHeight: '460px', width: 'auto'}} />
       </CarouselItem>
     );
   });
@@ -75,8 +76,8 @@ function RoomBookingHeader({ roomType, onRoomSelection }) {
         <div
           className="page-header-image"
           style={{
-            background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${houseSideImg}')`,
-            backgroundSize: 'cover',
+            background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${bgimg}')`,
+            // backgroundSize: 'cover',
           }}
           ref={pageHeader}
         ></div>

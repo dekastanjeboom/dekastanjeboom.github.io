@@ -3,7 +3,7 @@ import React from "react";
 
 // reactstrap components
 import { Container } from "reactstrap";
-import houseImg from "assets/img/house-outside/house.webp";
+import bgimg from "assets/img/dkb_huis_1.webp";
 // core components
 
 function IndexHeader() {
@@ -31,7 +31,8 @@ function IndexHeader() {
         <div
           className="page-header-image"
           style={{
-            background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${houseImg}')`,
+            background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('${bgimg}')`,
+            backgroundSize: 'cover',
           }}
           ref={pageHeader}
         ></div>
@@ -40,7 +41,7 @@ function IndexHeader() {
             <img
               alt="..."
               className="n-logo"
-              src={require("assets/img/chest_nut.png")}
+              src={require("assets/img/chest_nut.webp")}
             ></img>
             <h1 className="h1-seo" style={{textTransform: 'none'}}>De KaSTaNJeBooM</h1>
             <h3>Bed & Breakfast</h3>

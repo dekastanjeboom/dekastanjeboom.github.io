@@ -4,10 +4,10 @@ import { Container, Row, Col, CardImg, Card, CardHeader, CardBody, CardTitle, Ca
 import { useTranslation } from 'react-i18next';
 
 
-import bruggeImg from 'assets/img/see-and-do/brugge.webp';
-import bikingImg from 'assets/img/see-and-do/biking.webp';
-import beachImg from 'assets/img/see-and-do/beach.webp';
-import diningImg from 'assets/img/see-and-do/hoekske.jpg';
+import bruggeImg from 'assets/img/dkb_brugge_1.webp';
+import bikingImg from 'assets/img/dkb_fietsen_3.webp';
+import beachImg from 'assets/img/dkb_kust_2.webp';
+import diningImg from 'assets/img/dkb_dining_1.webp';
 
 
 function SeeAndDoSection() {
@@ -22,23 +22,31 @@ function SeeAndDoSection() {
     {
       title: t('Cycling in the countryside near Bruge'),
       img: bikingImg,
-      mainLink: 'https://west-vlinderen.be/routes/detail/sxx522/',
+      // mainLink: 'https://west-vlinderen.be/routes/detail/sxx522/',
       otherLinks: [],
     },
     {
       title: t('Visit the coast'),
       img: beachImg,
       mainLink: 'http://www.dekust.be/',
-      otherLinks: [{
-        name: 'kustpas.be',
-        link: 'http://www.kustpas.be/'
-      }],
+      // otherLinks: [{
+      //   name: 'kustpas.be',
+      //   link: 'http://www.kustpas.be/'
+      // }],
     },
     {
       title: t('Dining out'),
       img: diningImg,
       mainLink: '',
       otherLinks: [
+        {
+          name: 'Estaminet Alainprovist',
+          link: 'https://www.facebook.com/alainprovistestaminet/',
+        },
+        {
+          name: 'Restaurant Côté Préféré',
+          link: 'https://coteprefere.be/',
+        },
         {
           name: 'Restaurant \'t Oosthof',
           link: 'http://www.oosthof.be/'

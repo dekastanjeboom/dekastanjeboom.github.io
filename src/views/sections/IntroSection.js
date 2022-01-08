@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";
-import materFamiliasImg from '../../assets/img/house-outside/mater_familias.webp';
+import introImg from '../../assets/img/dkb_greet.webp';
 
 // core components
 
@@ -20,7 +20,7 @@ function IntroSection() {
             <p>{t('[initial_welcome_message]')}</p>
           </Col>
           <Col xs="12" sm="6" md="4" className="text-center">
-            <img alt="owner" style={{ display: 'inline' }} src={materFamiliasImg} />
+            <img alt="owner" style={{ display: 'inline' }} src={introImg} />
           </Col>
         </Row>
       </Container>
