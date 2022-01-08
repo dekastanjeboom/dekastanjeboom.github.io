@@ -84,13 +84,7 @@ function RoomBookingHeader({ roomType, onRoomSelection }) {
         <Container>
           <Col className="ml-auto mr-auto" md="4">
             <h2 style={{ marginBottom: 8 }}>{t(roomNames[roomType])}</h2>
-            <a
-              onClick={() => {
-                if (roomType !== STANDARD_ROOM) {
-                  setActiveIndex(0)
-                }}}
-              className={`btn ${roomType === STANDARD_ROOM ? 'btn-primary' : ''}`}
-              href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}/uptown`}>{t('Uptown room')}</a>
+            
             <a
               onClick={() => {
                 if (roomType !== DELUXE_ROOM) {
@@ -100,6 +94,13 @@ function RoomBookingHeader({ roomType, onRoomSelection }) {
               className={`btn ${roomType === DELUXE_ROOM ? 'btn-primary' : ''}`}
               href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}/downtown`}
             >{t('Downtown room')}</a>
+            <a
+              onClick={() => {
+                if (roomType !== STANDARD_ROOM) {
+                  setActiveIndex(0)
+                }}}
+              className={`btn ${roomType === STANDARD_ROOM ? 'btn-primary' : ''}`}
+              href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}/uptown`}>{t('Uptown room')}</a>
           </Col>
 
           <Row>

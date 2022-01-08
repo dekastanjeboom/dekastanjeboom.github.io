@@ -18,7 +18,7 @@ export default function App() {
           path={"/rooms/:roomType"}
           render={props => <RoomBookingPage {...props} />}
         />
-        <Redirect from="/rooms" to="/rooms/uptown" />
+        <Redirect from="/rooms" to="/rooms/downtown" />
         <Route
           path="/"
           render={props => <Index {...props}
