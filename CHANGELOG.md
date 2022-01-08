@@ -9,3 +9,8 @@
 
 ## 2020-6-12
 ### Adopted and adjusted for de kastanjeboom
+
+## [1.1.0] 2022-01-08
+Fixes biggest issues.
+    
+Removes google form, adds extra pictures, removes unnecessary code, ...

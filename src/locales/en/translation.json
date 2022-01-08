@@ -6,14 +6,15 @@
   "Book a room": "Book a room",
   "Take a look at our rooms": "Take a look at our rooms",
   "Rooms": "Rooms",
-  "Standard": "Standard",
-  "Deluxe": "Deluxe",
+  "Uptown": "Uptown",
+  "Downtown": "Downtown",
   "Find us on Facebook": "Find us on Facebook",
+  "Find us on": "Find us on",
   "Watch our reviews on Tripadvisor": "Watch our reviews on Tripadvisor",
   "LanguageCodeUppercase": "EN",
   "[initial_welcome_message]": "In a newly furnished home, located in a quiet and green neighbourhood, two cosy guestrooms were set up. The house is located in Jabbeke, in between Oostende en Brugge, twelve kilometer off the coast (exit 6 of the E40 highway). The atmosphere of B&B 'De Kastanjeboom' is that of a friendly guesthouse, perfect for meeting up with friends or simply for relaxing. Greet welcomes you with a great hospitality, in new arranged and furnished house. They offer two cosy rooms in a house that is situated in a quiet neighbourhood, halfway between Ostend and Bruges, at 12 km from the coast (exit 6 of the E40 highway). Tourist information available. Ideal departure for excursions and biking tours.",
   "Our rooms": "Our rooms",
-  "You can choose between two rooms. Both rooms are adjoined by a bathroom with toilet, shower and sink. The rooms also have a TV, fridge and wireless internet.": "You can choose between two rooms. Both rooms are adjoined by a bathroom with toilet, shower and sink. The rooms also have a TV, fridge and wireless internet.",
+  "The downstairs room has a bathroom with toilet, shower and sink. The upstairs bathroom is on the ground floor. Each room has a flat screen TV, fridge, air conditioning and wifi.": "The downstairs room has a bathroom with toilet, shower and sink. The upstairs bathroom is on the ground floor. Each room has a flat screen TV, fridge, air conditioning and wifi.",
   "per night": "per night",
   "More info": "More info",
   "Upstairs room": "Upstairs room",
@@ -28,8 +29,8 @@
   "Terras": "Terras",
   "The room has two single beds and a sofa bed (for one extra person) available. This room has a private bathroom downstairs.": "The room has two single beds and a sofa bed (for one extra person) available. This room has a private bathroom downstairs.",
   "The room has one double and a sofa bed ( for 1 extra person) available. This room has a private bathroom in the room and access to a terrace.": "The room has one double and a sofa bed ( for 1 extra person) available. This room has a private bathroom in the room and access to a terrace.",
-  "Book a standard room": "Book a standard room",
-  "Book a deluxe room": "Book a deluxe room",
+  "Book the uptown room": "Book the uptown room",
+  "Book the downtown room": "Book the downtown room",
   
   "[breakfast_message]": "Breakfast will be served with the best of local products: farmbutter, home made jam, cheese and delicious assorted sliced meat . If the weather permits, breakfast can be served on the terrace.",
 
@@ -38,8 +39,8 @@
   "Visit the coast": "Visit the coast",
   "Dining out":"Dining out",
   "Belgium": "Belgium",
-  "Standard room": "Standard room",
-  "Deluxe room": "Deluxe room",
+  "Uptown room": "Uptown room",
+  "Downtown room": "Downtown room",
   "Amenities": "Amenities",
   "Price": "Price",
   "Price per night": "Price per night",
@@ -69,6 +70,7 @@
   "Welcome": "Welcome",
 
   "Language": "Language",
-  "during weekends and school holidays":"during weekends and school holidays",
-  "per night during the weekends (friday-, saterday- or sundaynight) or school holidays.": "per night during the weekends (friday-, saterday- or sundaynight) or school holidays."
+  
+  "Send us an e-mail": "Send us an e-mail",
+  "Or just give us a call": "Or just give us a call"
 }

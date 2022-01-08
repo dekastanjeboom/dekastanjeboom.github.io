@@ -15,15 +15,15 @@ import {
   Nav,
   NavItem,
   NavLink,
+  Button,
 } from "reactstrap";
 
 // core components
 // import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import MainNavbar from 'components/Navbars/MainNavbar';
 import DarkFooter from 'components/Footers/DarkFooter';
-import RoomBookingForm from 'components/forms/RoomBookingForm';
 import RoomBookingHeader from "../../components/Headers/RoomBookingHeader";
-import { amenities, amenityAvailability, roomInfo, roomPricesPerNight, bookingTitle } from 'utils/rooms';
+import { amenities, amenityAvailability, roomInfo, roomPricesPerNight, bookingTitle } from 'constants/rooms';
 
 
 class RoomBookingPage extends React.Component {
@@ -145,13 +145,13 @@ class RoomBookingPage extends React.Component {
                             )}
                           </Col>
                         </Row>
+                        
                         <Row className="mb-2">
                           <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
-                            <b>{t('Check-in and out')}</b>
+                            <b>{t('Price per night')}</b>
                           </Col>
                           <Col xs="7" className="text-left">
-                            <div>{t('Check-in from 5pm')}</div>
-                            <div>{t('Check-out until 11am')}</div>
+                            <span>€{roomPricesPerNight[roomType]}</span>
                           </Col>
                         </Row>
                         <Row className="mb-2">
@@ -162,23 +162,16 @@ class RoomBookingPage extends React.Component {
                             <span>{t('Two nights')}</span>
                           </Col>
                         </Row>
-                        {/* <Row className="mb-2">
-                          <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
-                            <b>{t('Price per night during the week')}</b>
-                          </Col>
-                          <Col xs="7" className="text-left">
-                            <span>€{roomPricesPerNight[roomType]}</span>
-                          </Col>
-                        </Row>
                         <Row className="mb-2">
                           <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
-                            <b>{t('Price per night during weekends and school holidays')}</b>
+                            <b>{t('Check-in and out')}</b>
                           </Col>
                           <Col xs="7" className="text-left">
-                            <span>€{Number(roomPricesPerNight[roomType]) + Number(process.env.REACT_APP_PRICE_INCREASE_PER_ROOM_WEEKEND_HOLIDAYS)}</span>
+                            <div>{t('Check-in from 5pm')}</div>
+                            <div>{t('Check-out until 11am')}</div>
                           </Col>
-                        </Row> */}
-
+                        </Row>
+                        
                       </Container>
                     </TabPane>
                     <TabPane tabId="iconPills2">
@@ -204,20 +197,29 @@ class RoomBookingPage extends React.Component {
             <Container>
 
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h3 className="mb-2">{t(bookingTitle[roomType])}</h3>
-                <div>
-                  <span className="mb-0">€{roomPricesPerNight[roomType]} {t('per night')}</span>
-                </div>
+                <h3>{t(bookingTitle[roomType])}</h3>
 
-                <div>
-                  <span
-                    className="mb-3 text-muted"
-                  >€{Number(roomPricesPerNight[roomType]) + Number(process.env.REACT_APP_PRICE_INCREASE_PER_ROOM_WEEKEND_HOLIDAYS)} {t('per night during the weekends (friday-, saterday- or sundaynight) or school holidays.')}
-                  </span>
-                </div>
-                <RoomBookingForm roomType={roomType} />
+                <Button
+                  block
+                  className="btn-round"
+                  color="info"
+                  href={`mailto:info@dekastanjeboom.be?subject=${t(bookingTitle[roomType])}`}
+                  role="button"
+                  size="lg"
+                >
+                  {t('Send us an e-mail')}
+                </Button>
+
+                <p><b>{t('Or just give us a call')}</b></p>
+                <p>
+                  {process.env.REACT_APP_PHONE_NR_CELL}
+                </p>
+                <p>
+                  {process.env.REACT_APP_PHONE_NR_HOME}
+                </p>
+                
+
               </Col>
-
             </Container>
           </div>
           <DarkFooter />

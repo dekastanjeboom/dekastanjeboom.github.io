@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import bruggeImg from 'assets/img/see-and-do/brugge.webp';
 import bikingImg from 'assets/img/see-and-do/biking.webp';
 import beachImg from 'assets/img/see-and-do/beach.webp';
-import diningImg from 'assets/img/see-and-do/dining.webp';
+import diningImg from 'assets/img/see-and-do/hoekske.jpg';
 
 
 function SeeAndDoSection() {
@@ -50,9 +50,13 @@ function SeeAndDoSection() {
         {
           name: 'Eethuis Mint',
           link: 'http://www.eethuismint.be/restaurant-jabbeke/'
+        },
+        {
+          name: '\'t Hoekske',
+          link: 'https://www.tripadvisor.be/Restaurant_Review-g641828-d10840864-Reviews-Praat_En_Eetcafe_T_Hoekske-Jabbeke_West_Flanders_Province.html'
         }
       ],
-    }
+    },
   ]
   return (
     <div className="section">

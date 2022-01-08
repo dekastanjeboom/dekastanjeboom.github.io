@@ -9,14 +9,22 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-
 } from "reactstrap";
 
-import houseImg from 'assets/img/house-outside/house.webp';
-import stoneImg from 'assets/img/de_kastanjeboom_stone.webp';
+import img1 from 'assets/img/other/de_kastanjeboom_stone.webp';
+import img2 from 'assets/img/other/certificaat.JPG';
+import img3 from 'assets/img/breakfast/breakfast_3.JPG';
+import img4 from 'assets/img/other/kaartje.JPG';
+import img5 from 'assets/img/house-outside/house.webp';
+import img6 from 'assets/img/other/maskobos.JPG';
+import img7 from 'assets/img/other/vaart.JPG';
+import img8 from 'assets/img/other/vaart2.JPG';
+import img9 from 'assets/img/other/permeke1.JPG';
+import img10 from 'assets/img/other/permeke2.JPG';
+import img11 from 'assets/img/other/fietsen_dekanstanjeboom.JPG'
 
 function PhotosSection() {
-  const imageUrls = [houseImg, stoneImg];
+  const imageUrls = [img2, img3, img4, img1, img5, img6, img7, img8, img9, img10, img11];
 
   const { t } = useTranslation();
 

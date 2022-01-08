@@ -17,8 +17,8 @@ function DarkFooter({ t }) {
               <a href="mailto:info@dekastanjeboom.be" style={{ display: 'block' }}>info@dekastanjeboom.be</a>
               <div>Kastanjebosstraat 19</div>
               <div>8490 Jabbeke ({t('Belgium')})</div>
-              <div>Tel: +32 (0)50 81 22 83</div>
-              <div>Gsm: +32 (0)473 47 89 98</div>
+              <div>Tel: {process.env.REACT_APP_PHONE_NR_HOME}</div>
+              <div>Gsm: {process.env.REACT_APP_PHONE_NR_CELL}</div>
             </div>
           </Col>
           <Col xs="12" md="6" style={{display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: 16}}>
@@ -33,7 +33,7 @@ function DarkFooter({ t }) {
         </Row>
         <Row className="my-3">
           <div className="w-100 text-center copyright" id="copyright">
-            © {process.env.REACT_APP_YEAR_LAST_UPDATED}, <a href="mailto:bert.lievrouw@gmail.com">Bert Lievrouw</a>
+            © 2021, <a href="mailto:bert.lievrouw@gmail.com?subject=De Kastanjeboom">Bert Lievrouw</a>
           </div>
         </Row>
       </Container>

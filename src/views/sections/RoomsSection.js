@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next';
 
 // reactstrap components
 import { Container, Row, Col, Card, CardImg, CardBody, CardTitle, CardText } from "reactstrap";
-// import { STANDARD_ROOM, DELUXE_ROOM } from '../../utils/rooms';
-import { roomTypes, roomDescriptions, roomPricesPerNight, roomImages, ROOM_DETAIL_URL_NAME } from '../../utils/rooms'
+// import { STANDARD_ROOM, DELUXE_ROOM } from '../../constants/rooms';
+import { roomTypes, roomDescriptions, roomPricesPerNight, roomImages, ROOM_DETAIL_URL_NAME } from '../../constants/rooms';
 
 // core components
 
@@ -17,7 +17,7 @@ function RoomsSection() {
         <Row>
           <Col md="12" className="text-center">
             <h3>{t('Our rooms')}</h3>
-            <p>{t('You can choose between two rooms. Both rooms are adjoined by a bathroom with toilet, shower and sink. The rooms also have a TV, fridge and wireless internet.')}</p>
+            {/* <p>{t('The downstairs room has a bathroom with toilet, shower and sink. The upstairs bathroom is on the ground floor. Each room has a flat screen TV, fridge, air conditioning and wifi.')}</p> */}
           </Col>
         </Row>
         <Row>
@@ -31,7 +31,7 @@ function RoomsSection() {
                   <CardText>
                     <span style={{ display: 'block' }}>€{roomPricesPerNight[roomType]}</span>
                     <sup style={{ display: 'block', lineHeight: '15px' }}>{t('per night')}</sup>
-                    <small style={{ lineHeight: '15px', display: 'block' }}>€{Number(roomPricesPerNight[roomType]) + Number(process.env.REACT_APP_PRICE_INCREASE_PER_ROOM_WEEKEND_HOLIDAYS)}&nbsp;{t('per night')}&nbsp;{t('during weekends and school holidays')}</small>
+                    {/* <small style={{ lineHeight: '15px', display: 'block' }}>€{Number(roomPricesPerNight[roomType]) + Number(process.env.REACT_APP_PRICE_INCREASE_PER_ROOM_WEEKEND_HOLIDAYS)}&nbsp;{t('per night')}&nbsp;{t('during weekends and school holidays')}</small> */}
                   </CardText>
                   <a
                     href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}/${roomType}`}

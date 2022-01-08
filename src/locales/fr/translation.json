@@ -6,16 +6,17 @@
   "Book a room": "Réserver une chambre",
   "Take a look at our rooms": "Découvrez les chambres",
   "Rooms": "Chambres",
-  "Standard": "Standard",
-  "Deluxe": "Deluxe",
+  "Uptown": "Uptown",
+  "Downtown": "Downtown",
   "Find us on Facebook": "Trouvez-nous sur Facebook",
+  "Find us on": "Trouvez-nous sur",
   "Watch our reviews on Tripadvisor": "Regardez sur Tripadvisor",
   "LanguageCodeUppercase": "FR",
 
   "[initial_welcome_message]": "Nos chambres d'hôtes se trouvent à Jabbeke, un village à mi-chemin entre Bruges et Ostende (sortie nr. 6 de l'autoroute E 40) et à 12 km de la côte. Elles ont été aménagées dans une maison renouvelée, située dans un voisinage tranquille et vert. Acceuil amicale. Le petit déjeuner est composé des meilleurs produits du terroir, p.ex. beurre de ferme, confiture faite maison, fromage, jambon etc. Point de départ idéal pour des excursions et des promenades en bicylette.",
  
   "Our rooms": "Notres chambres",
-  "You can choose between two rooms. Both rooms are adjoined by a bathroom with toilet, shower and sink. The rooms also have a TV, fridge and wireless internet.": " Vous pouvez choisir entre deux chambres. Les deux chambres sont prevues d’une salle de bain avec WC, douche et lavabo. Les chambres sont également équipés avec une télévision, un réfrigérateur et wifi.",
+  "The downstairs room has a bathroom with toilet, shower and sink. The upstairs bathroom is on the ground floor. Each room has a flat screen TV, fridge, air conditioning and wifi.": "La chambre en bas a une salle de bain avec une toilette , douche et lavabo. La salle de bain du chambre en haute est au rez-de-chaussée. Chaque chambre dispose d'une télévision, d'un réfrigérateur, de la climatisation et du wifi.",
   "per night": "Par nuit",
   "More info": "Plus d’info",
   "Upstairs room": "Chambre en Haut",
@@ -30,8 +31,8 @@
   "Terras": "Terrasse",
   "The room has two single beds and a sofa bed (for one extra person) available. This room has a private bathroom downstairs.": "La chambre a deux lits simples et un canapé ( pour une personne supplémentaire). Cette chambre a une salle de bains privé en bas.",
   "The room has one double and a sofa bed ( for 1 extra person) available. This room has a private bathroom in the room and access to a terrace.": "La chambre dispose d'un lit double et d'un canapé-lit (pour 1 personne supplémentaire). Cette chambre dispose d'une salle de bains privé dans la chambre et l’accès à une terrasse.",
-  "Book a standard room": "Reservez un chambre standard",
-  "Book a deluxe room": "Reservez un chambre deluxe",
+  "Book the uptown room": "Reservez le chambre 'uptown'",
+  "Book the downtown room": "Reservez le chambre 'downtown'",
 
   "[breakfast_message]": "Petit déjeuner copieux avec des produits locaux. Pain frais. Confiture maison. Miel. Oeufs à votre choix. Viandes et fromages, jus de fruits fraîchement pressés, yaourt, des petits pains, café, thé ou lait au chocolat. Petit déjeuner entre 8h30 et 1Oh. Sur la terrasse quand il fait beau.",
 
@@ -40,8 +41,8 @@
   "Visit the coast": "Visitez la mer",
   "Dining out":"Dinner",
   "Belgium": "Belgique",
-  "Standard room": "Chambre Standard",
-  "Deluxe room": "Chambre Deluxe",
+  "Uptown room": "Chambre Uptown",
+  "Downtown room": "Chambre Downtown",
   "Amenities": "Amenities",
   "Price": "Prix",
   "Price per night": "Prix par nuit",
@@ -71,6 +72,7 @@
   "Welcome": "Bienvenue",
 
   "Language": "Langue",
-  "during weekends and school holidays": "pendant le week-end et les vacances scolaires",
-  "per night during the weekends (friday-, saterday- or sundaynight) or school holidays.": "par nuit pendant le week-end (vendredi, samedi ou dimanche soir) ou pendant les vacances scolaires."
+
+  "Send us an e-mail": "Envoyez-nous un e-mail",
+  "Or just give us a call": "Ou appelez-nous simplement"
 }

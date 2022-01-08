@@ -6,14 +6,15 @@
   "Book a room": " Zimmer buchen",
   "Take a look at our rooms": "Schauen sie sich unsere zimmer an",
   "Rooms": "Zimmers",
-  "Standard": "Standard",
-  "Deluxe": "Deluxe",
+  "Uptown": "Uptown",
+  "Downtown": "Downtown",
   "Find us on Facebook": "Finde uns auf Facebook",
+  "Find us on": "Finde uns auf",
   "Watch our reviews on Tripadvisor": "Sehen sie unsere bewertungen auf tripadvisor",
   "LanguageCodeUppercase": "DE",
   "[initial_welcome_message]": "Ich, Greet, möchte Sie herzlich in unserem Haus willkommen heissen, das ganz in der Nähe von Brügge, in einer ruhigen, schönen Gegend liegt. In unserem Haus haben wir zwei Zimmer neu eingerichtet. Das Haus liegt in Jabbeke, auf dem Weg zwischen Oostende und Brügge, ca. 12 km von der Küste (Autobahn E40, Ausfahrt 6) entfernt. Wir bieten ein reichhaltiges Frühstück. Auch touristische Information stehen Innen zur Verügung. Unser Haus ist ein idealer Startplatz für Ausflüge und Radtouren.",
   "Our rooms": "Unsere Zimmer",
-  "You can choose between two rooms. Both rooms are adjoined by a bathroom with toilet, shower and sink. The rooms also have a TV, fridge and wireless internet.": "Sie können zwischen zwei Zimmern wählen. Beide Zimmer sind durch ein Badezimmer mit WC, Dusche und Waschbecken verbunden. Die Zimmer verfügen zudem über einen TV, einen Kühlschrank und WLAN.",
+  "The downstairs room has a bathroom with toilet, shower and sink. The upstairs bathroom is on the ground floor. Each room has a flat screen TV, fridge, air conditioning and wifi.": "Das Zimmer im Erdgeschoss verfügt über ein Badezimmer mit WC, Dusche und Waschbecken. Das Badezimmer im Obergeschoss befindet sich im Erdgeschoss. Jedes Zimmer verfügt über einen Flachbild-TV, einen Kühlschrank, eine Klimaanlage und Wifi.",
   "per night": "pro nacht",
   "More info": "Mehr info",
   "Upstairs room": "Zimmer im Obergeschoss",
@@ -28,8 +29,8 @@
   "Terras": "Terras",
   "The room has two single beds and a sofa bed (for one extra person) available. This room has a private bathroom downstairs.": "Das Zimmer verfügt über zwei Einzelbetten und ein Schlafsofa (für eine zusätzliche Person). Dieses Zimmer verfügt über ein eigenes Bad im Erdgeschoss.",
   "The room has one double and a sofa bed ( for 1 extra person) available. This room has a private bathroom in the room and access to a terrace.": "Das Zimmer hat ein Doppelbett und ein Schlafsofa (für 1 zusätzliche Person) zur Verfügung. Dieses Zimmer verfügt über ein eigenes Bad im Zimmer und Zugang zu einer Terrasse.",
-  "Book a standard room": "Standardzimmer buchen",
-  "Book a deluxe room": " Deluxe-Zimmer buchen",
+  "Book the uptown room": "Uptown-zimmer buchen",
+  "Book the downtown room": " Downtown-Zimmer buchen",
 
   "[breakfast_message]": "Umfangreiches Frühstück mit regionalen Produkten. Frisch gebackenes Brot. Selbstgemachte Marmelade. Honig. Eier, wie Sie sie wollen. Wurstwaren und Käse. Frisch gepresster Orangen- oder Apfelsaft. Frisches Obst, Joghurt, Brot, Gebäck, Kaffee, Tee oder Schokoladenmilch. Frühstück zwischen 8u30 und 10u. Draußen auf den Terras, bei schönem Wetter.",
 
@@ -38,11 +39,11 @@
   "Visit the coast": " Besuchen Sie die Küste",
   "Dining out":"Dining out",
   "Belgium": "Belgien",
-  "Standard room": "Standard zimmer",
-  "Deluxe room": "Deluxe zimmer",
+  "Uptown room": "Uptown zimmer",
+  "Downtown room": "Downtown zimmer",
   "Amenities": "Annehmlichkeiten",
   "Price": "Preis",
-  "Price per night": "preis pro nacht",
+  "Price per night": "Preis pro nacht",
   "Check-in and out": "Ein- und Auschecken",
   "Check-in from 5pm": "Check-in ab 17uhr",
   "Check-out until 11am": "Check-out bis 11uhr",
@@ -69,6 +70,7 @@
   "Welcome": "Willkommen",
 
   "Language": "Sprache",
-  "during weekends and school holidays": "an Wochenenden und in den Schulferien",
-  "per night during the weekends (friday-, saterday- or sundaynight) or school holidays.": "pro nacht an den Wochenenden (Freitag-, Samstag- oder Sonntagabend) oder in den Schulferien."
+
+  "Send us an e-mail": "Senden Sie uns eine Email",
+  "Or just give us a call": "Oder ruf uns einfach an"
 }

@@ -1,29 +1,17 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
 
-// reactstrap components
 import {
   Container,
   Col,
   Row,
-  // Card,
   Carousel,
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  // CarouselCaption,
-  // CardBody,
-  // CardText,
-  // CardHeader,
-  // TabPane,
-  // TabContent,
-  // Nav,
-  // NavItem,
-  // NavLink,
-  // Button
 } from "reactstrap";
-import houseSideImg from 'assets/img/house_side.webp';
-import { ROOM_DETAIL_URL_NAME, roomNames, roomImages } from 'utils/rooms';
+import houseSideImg from 'assets/img/house-outside/house_side.webp';
+import { ROOM_DETAIL_URL_NAME, roomNames, roomImages, STANDARD_ROOM, DELUXE_ROOM } from 'constants/rooms';
 
 
 function RoomBookingHeader({ roomType, onRoomSelection }) {
@@ -67,8 +55,6 @@ function RoomBookingHeader({ roomType, onRoomSelection }) {
     setActiveIndex(newIndex);
   }
 
-  console.log("imageUrl", imageUrls);
-
   const slides = imageUrls.map((imgUrl, i) => {
     return (
       <CarouselItem
@@ -77,7 +63,6 @@ function RoomBookingHeader({ roomType, onRoomSelection }) {
         key={i}
       >
         <img src={imgUrl} alt={`room_img_${i}`} />
-        {/* <CarouselCaption captionText={item.caption} captionHeader={item.caption} /> */}
       </CarouselItem>
     );
   });
@@ -100,20 +85,20 @@ function RoomBookingHeader({ roomType, onRoomSelection }) {
             <h2 style={{ marginBottom: 8 }}>{t(roomNames[roomType])}</h2>
             <a
               onClick={() => {
-                if (roomType !== 'standard') {
+                if (roomType !== STANDARD_ROOM) {
                   setActiveIndex(0)
                 }}}
-              className={`btn ${roomType === 'standard' ? 'btn-primary' : ''}`}
-              href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}/standard`}>{t('Standard room')}</a>
+              className={`btn ${roomType === STANDARD_ROOM ? 'btn-primary' : ''}`}
+              href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}/uptown`}>{t('Uptown room')}</a>
             <a
               onClick={() => {
-                if (roomType !== 'deluxe') {
+                if (roomType !== DELUXE_ROOM) {
                   setActiveIndex(0)
                 }
               }}
-              className={`btn ${roomType === 'deluxe' ? 'btn-primary' : ''}`}
-              href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}/deluxe`}
-            >{t('Deluxe room')}</a>
+              className={`btn ${roomType === DELUXE_ROOM ? 'btn-primary' : ''}`}
+              href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}/downtown`}
+            >{t('Downtown room')}</a>
           </Col>
 
           <Row>
@@ -129,7 +114,6 @@ function RoomBookingHeader({ roomType, onRoomSelection }) {
                 <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
               </Carousel>
             </Col>
-
           </Row>
         </Container>
       </div>

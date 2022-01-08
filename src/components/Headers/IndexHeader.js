@@ -42,7 +42,7 @@ function IndexHeader() {
               className="n-logo"
               src={require("assets/img/chest_nut.png")}
             ></img>
-            <h1 className="h1-seo" style={{textTransform: 'none'}}>de KaSTaNJeBooM</h1>
+            <h1 className="h1-seo" style={{textTransform: 'none'}}>De KaSTaNJeBooM</h1>
             <h3>Bed & Breakfast</h3>
           </div>
         </Container>

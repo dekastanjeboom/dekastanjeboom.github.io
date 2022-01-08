@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
 import {
-  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
@@ -182,15 +181,15 @@ function MainNavbar(props) {
                   </NavItem>
                 </React.Fragment>
               ) : (
-                  <NavItem>
-                    <NavLink
-                      href={`${process.env.PUBLIC_URL}/`}
-                    >
-                      <p>Info</p>
-                    </NavLink>
-                  </NavItem>
-                )}
-              <UncontrolledDropdown nav>
+                <NavItem>
+                  <NavLink
+                    href={`${process.env.PUBLIC_URL}/`}
+                  >
+                    <p>Info</p>
+                  </NavLink>
+                </NavItem>
+              )}
+              {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -200,14 +199,22 @@ function MainNavbar(props) {
                   <p>{t('Book a room')}</p>
                 </DropdownToggle>
                 <DropdownMenu>
-                  <DropdownItem to={`${process.env.PUBLIC_URL}/rooms/standard`} tag={Link}>
-                    {t('Standard')}
+                  <DropdownItem to={`${process.env.PUBLIC_URL}/rooms/uptown`} tag={Link}>
+                    {t('Uptown')}
                   </DropdownItem>
-                  <DropdownItem to={`${process.env.PUBLIC_URL}/rooms/deluxe`} tag={Link}>
-                    {t('Deluxe')}
+                  <DropdownItem to={`${process.env.PUBLIC_URL}/rooms/downtown`} tag={Link}>
+                    {t('Downtown')}
                   </DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
+
+              <NavItem>
+                <NavLink
+                to={`${process.env.PUBLIC_URL}/rooms`} tag={Link}>
+                  <p>{t('Book a room')}</p>
+                </NavLink>
+              </NavItem>
+
 
               <NavItem>
                 <NavLink
@@ -222,19 +229,38 @@ function MainNavbar(props) {
                   {t('Find us on Facebook')}
                 </UncontrolledTooltip>
               </NavItem>
+
+              <NavItem>
+                <NavLink
+                  href={process.env.REACT_APP_INSTAGRAM_LINK}
+                  target="_blank"
+                  id="instagram-tooltip"
+                >
+                  <i className="fab fa-instagram"></i>
+                  <p className="d-lg-none d-xl-none">Instagram</p>
+                </NavLink>
+                <UncontrolledTooltip target="#instagram-tooltip">
+                  {t("Find us on")} Instagram
+                </UncontrolledTooltip>
+              </NavItem>
+
               <NavItem>
                 <NavLink
                   href={process.env.REACT_APP_TRIPADVISOR_LINK}
                   target="_blank"
-                  id="instagram-tooltip"
+                  id="tripadvisor-tooltip"
                 >
                   <i className="fab fa-tripadvisor"></i>
                   <p className="d-lg-none d-xl-none">TripAdvisor</p>
                 </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
+                <UncontrolledTooltip target="#tripadvisor-tooltip">
                   {t("Watch our reviews on Tripadvisor")}
                 </UncontrolledTooltip>
               </NavItem>
+
+
+
+
 
               <UncontrolledDropdown nav>
                 <DropdownToggle

@@ -6,16 +6,17 @@
   "Book a room": "Kamer boeken",
   "Take a look at our rooms": "Bekijk onze kamers",
   "Rooms": "Kamers",
-  "Standard": "Standaard",
-  "Deluxe": "Deluxe",
+  "Uptown": "Uptown",
+  "Downtown": "Downtown",
   "Find us on Facebook": "Vind ons op Facebook",
+  "Find us on": "Vind ons op",
   "Watch our reviews on Tripadvisor": "Bekijk onze reviews op Tripadvisor",
   "LanguageCodeUppercase": "NL",
   
   "[initial_welcome_message]": "In een nieuw ingericht huis, gelegen in een rustige groene buurt werden twee gezellige gastenkamers ingericht. Het huis is gelegen te Jabbeke, halfweg tussen Oostende en Brugge, op twaalf kilometer van de kust (afrit 6 van de E40 snelweg). U wordt er vriendelijk onthaald door Greet. 's Morgens geniet u van een heerlijk en verzorgd ontbijt. Een uitgebreid toeristisch informatiepakket is ter beschikking van de gasten. Het is een ideaal vertrekpunt voor uitstappen en fietsroutes.",
   
   "Our rooms": "Onze kamers",
-  "You can choose between two rooms. Both rooms are adjoined by a bathroom with toilet, shower and sink. The rooms also have a TV, fridge and wireless internet.": "Je kan kiezen tussen twee kamers. Beide kamers zijn vergezeld van een badkamer met toilet, douche and lavabo. Elke kamer heeft ook een TV, frigo and draadloos internet.",
+  "The downstairs room has a bathroom with toilet, shower and sink. The upstairs bathroom is on the ground floor. Each room has a flat screen TV, fridge, air conditioning and wifi.": "De benedenkamer heeft een badkamer met toilet, douche en lavabo. De badkamer van de bovenkamer bevindt zich op het gelijkvloers. Elke kamer heeft een flatscreen TV, frigo, airco en wifi.",
   "More info": "Meer info",
   "Upstairs room": "Bovenkamer",
   "Downstairs room with adjoining terras": "Benedenkamer met aansluitend terras",
@@ -29,8 +30,8 @@
   "Terras": "Terras",
   "The room has two single beds and a sofa bed (for one extra person) available. This room has a private bathroom downstairs.": "De kamer heeft twee enkele bedden en een zetelbed (voor een extra persoon). Deze kamer heeft een prive badkamer beneden.",
   "The room has one double and a sofa bed ( for 1 extra person) available. This room has a private bathroom in the room and access to a terrace.": "De kamer heeft een dubbelbed en een zetelbed (voor een extra persoon). Verder is er nog een prive badkamer en een terras.",
-  "Book a standard room": "Boek een standaardkamer",
-  "Book a deluxe room": "Boek een deluxekamer",
+  "Book the uptown room": "De Uptown-kamer boeken",
+  "Book the downtown room": "De Downtown-kamer boeken",
 
   "[breakfast_message]": "Uitgebreid ontbijt met streekproducten. Verse gebakken brood. Zelf-gemaakte confituur. Honing. Eieren zoals je ze graag hebt. Charcuterie en kaas. Vers geperst sinaasappel- en appelsap. Vers fruit, yoghurt, broodjes, koffiekoeken, koffie, thee or chocomelk. Ontbijt tussen 8u30 en 10u. Bij mooi weer, buiten op het terras.",
 
@@ -39,8 +40,8 @@
   "Visit the coast": "Bezoek de kust",
   "Dining out": "Uit eten",
   "Belgium": "België",
-  "Standard room": "Standaard kamer",
-  "Deluxe room": "Deluxe kamer",
+  "Uptown room": "Uptown kamer",
+  "Downtown room": "Downtown kamer",
   "Amenities": "Voorziening",
   "Price": "Prijs",
   "Price per night": "Prijs per nacht",
@@ -71,6 +72,7 @@
   "Welcome": "Welkom",
 
   "Language": "Taal",
-  "during weekends and school holidays": "tijdens weekends end schoolvakanties",
-  "per night during the weekends (friday-, saterday- or sundaynight) or school holidays.": "per nacht tijdens weekends (vrijdag-, zaterdag- of zondagnacht) of schoolvakanties."
+
+  "Send us an e-mail": "Zend ons een mailtje",
+  "Or just give us a call": "Of bel ons gewoon"
 }

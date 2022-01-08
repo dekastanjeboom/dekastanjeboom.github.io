@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Container, Row, Col, Button } from 'reactstrap';
 
 // core components
 import MainNavbar from "components/Navbars/MainNavbar.js";
@@ -13,7 +14,11 @@ import BreakfastSection from './sections/BreakfastSection';
 import SeeAndDoSection from './sections/SeeAndDoSection';
 import PhotosSection from './sections/PhotosSection';
 
-function Index() {
+import { ROOM_DETAIL_URL_NAME } from 'constants/rooms';
+import { withTranslation } from 'react-i18next';
+
+
+function Index({ t }) {
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
@@ -48,6 +53,23 @@ function Index() {
           <div id="photos-section">
             <PhotosSection />
           </div>
+
+          <Container>
+            <Row>
+              <Col md="12" className="text-center mb-4">
+                <Button
+                  block
+                  className="btn-round"
+                  color="info"
+                  href={`${process.env.PUBLIC_URL}/#/${ROOM_DETAIL_URL_NAME}`}
+                  role="button"
+                  size="lg"
+                >
+                  {t('Book a room')}
+                </Button>
+              </Col>
+            </Row>
+          </Container>
         </div>
         <DarkFooter />
       </div>
@@ -55,4 +77,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default withTranslation()(Index);
