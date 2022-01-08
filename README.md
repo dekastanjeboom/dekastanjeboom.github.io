@@ -23,10 +23,10 @@ npm run start
 
 ### Update and deploy
 - Commit changes to `development` git branch
+- Bump version in git tag, package.json and describe changes in `CHANGELOG.md`
 - Merge `development` branch into `master` branch
 - Deploy `master` branch to github pages:
 ```
 npm run predeploy
 npm run deploy
 ```
-- Update `CHANGELOG.md`
