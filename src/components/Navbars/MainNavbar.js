@@ -110,7 +110,6 @@ function MainNavbar(props) {
                           .scrollIntoView();
                       }}
                     >
-                      {/* <i className="now-ui-icons arrows-1_cloud-download-93"></i> */}
                       <p>{t('Intro')}</p>
                     </NavLink>
                   </NavItem>
@@ -189,24 +188,6 @@ function MainNavbar(props) {
                   </NavLink>
                 </NavItem>
               )}
-              {/* <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  nav
-                  onClick={e => e.preventDefault()}
-                >
-                  <p>{t('Book a room')}</p>
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem to={`${process.env.PUBLIC_URL}/rooms/uptown`} tag={Link}>
-                    {t('Uptown')}
-                  </DropdownItem>
-                  <DropdownItem to={`${process.env.PUBLIC_URL}/rooms/downtown`} tag={Link}>
-                    {t('Downtown')}
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown> */}
 
               <NavItem>
                 <NavLink
