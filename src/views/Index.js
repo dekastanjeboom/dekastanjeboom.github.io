@@ -9,6 +9,7 @@ import DarkFooter from "components/Footers/DarkFooter";
 
 // sections for this page
 import IntroSection from './sections/IntroSection';
+import VideoSection from './sections/VideoSection';
 import RoomsSection from './sections/RoomsSection';
 import BreakfastSection from './sections/BreakfastSection';
 import SeeAndDoSection from './sections/SeeAndDoSection';
@@ -40,12 +41,16 @@ function Index({ t }) {
           <div id="intro-section">
             <IntroSection />
           </div>
+          <div>
+            <VideoSection />
+          </div>
           <div id="rooms-section">
             <RoomsSection />
           </div>
           <div id="breakfast-section">
             <BreakfastSection />
           </div>
+          
 
           <div id="seeanddo-section">
             <SeeAndDoSection />
