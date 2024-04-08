@@ -30,3 +30,11 @@ npm run start
 npm run predeploy
 npm run deploy
 ```
+
+## Dependencies
+- Node v14
+  - `nvm use 14`
+  - if node-sass error: 
+    - `npm install`
+    <!-- - `npm rebuild node-sass`
+    https://proustibat.medium.com/how-to-fix-error-node-sass-does-not-yet-support-your-current-environment-os-x-64-bit-with-c1b3298e4af0 -->

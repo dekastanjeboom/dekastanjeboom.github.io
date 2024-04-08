@@ -72,10 +72,10 @@ export const amenities = [
     name: 'Parking',
     iconClassName: 'fas fa-parking',
   },
-  {
-    name: 'Sofabed for one extra person',
-    iconClassName: 'fas fa-bed'
-  },
+  // {
+  //   name: 'Sofabed for one extra person',
+  //   iconClassName: 'fas fa-bed'
+  // },
   {
     name: 'Airco',
     iconClassName: '',
