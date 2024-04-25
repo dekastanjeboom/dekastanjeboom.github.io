@@ -45,8 +45,8 @@ export const roomImages = {
 
 
 export const roomInfo = {
-  [STANDARD_ROOM]: 'The room has two single beds and a sofa bed (for one extra person) available. This room has a private bathroom downstairs.',
-  [DELUXE_ROOM]: 'The room has one double and a sofa bed ( for 1 extra person) available. This room has a private bathroom in the room and access to a terrace.',
+  [STANDARD_ROOM]: 'The room has two single beds. This room has a private bathroom downstairs.',
+  [DELUXE_ROOM]: 'The room has a double bed. This room has a private bathroom in the room and access to a terrace.',
 }
 
 export const bookingTitle = {
