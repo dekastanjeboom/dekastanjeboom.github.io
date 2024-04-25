@@ -145,7 +145,7 @@ class RoomBookingPage extends React.Component {
                             )}
                           </Col>
                         </Row>
-                        
+
                         <Row className="mb-2">
                           <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
                             <b>{t('Price per night')}</b>
@@ -171,7 +171,7 @@ class RoomBookingPage extends React.Component {
                             <div>{t('Check-out until 11am')}</div>
                           </Col>
                         </Row>
-                        
+
                       </Container>
                     </TabPane>
                     <TabPane tabId="iconPills2">
@@ -184,8 +184,8 @@ class RoomBookingPage extends React.Component {
                     </TabPane>
                     <TabPane tabId="iconPills3">
                       <ul style={{ listStyleType: 'none' }}>
-                        <li>{t("Childrens bed available (+€5 per night)")}</li>
-                        <li>{t('A reservation of a single night is possible on request according to availability (+€10).')}</li>
+                        <li>{t("Childrens bed available (+€10 per night)")}</li>
+                        {/* <li>{t('A reservation of a single night is possible on request according to availability (+€10).')}</li> */}
                       </ul>
                     </TabPane>
                   </TabContent>
@@ -217,7 +217,7 @@ class RoomBookingPage extends React.Component {
                 <p>
                   {process.env.REACT_APP_PHONE_NR_HOME}
                 </p>
-                
+
 
               </Col>
             </Container>
