@@ -51,6 +51,8 @@
     "typescript": "3.5.3"
   },
   "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
     "gh-pages": "^3.0.0"
   }
 }
