@@ -11,7 +11,22 @@ import "assets/demo/demo.css";
 import Index from "views/Index.js";
 import RoomBookingPage from 'views/booking/RoomBookingPage';
 
-const DKB_SETTINGS_JSON_URL = "https://script.googleusercontent.com/macros/echo?user_content_key=opO6-W64iSMKyM815F1IMvODhkBmZS81jPshNiJx7h_Jn0IvB_dIUGkZI89cWzPjnnrNaTJUjTflL7ot4gtRSCk3yQZA_yK_m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnCR6h95xpb4Aax6PoRabciAjOqctesc39UjaXN15lkLXOTwQj2gUpg4s51vEn2tf-NmH2VjQcrKWfb0LkOqTioDkGUvUIS6mYtz9Jw9Md8uu&lib=M7Z-NvP2-JZ8oM84JbUDQKPgDtBN8_N8s"
+/**
+ * Public settings endpoint (Google Apps Script Web App)
+ *
+ * IMPORTANT:
+ * - This URL comes from an Apps Script deployment ("Web app")
+ * - If the Apps Script code is changed, it MUST be redeployed
+ * - After redeploying, this URL MAY change
+ *   → If prices stop loading, update this URL first
+ *
+ * Expected response (JSON):
+ * {
+ *   "price_upstairs_euro": number,
+ *   "price_downstairs_euro": number
+ * }
+ */
+const DKB_SETTINGS_JSON_URL = "https://script.google.com/macros/s/AKfycbyCyk-cjDu0SXh4_sJgz-m1ZGfNjQlLOahfoePdzvOAwzF48pscHQ4kEiNWs-bp5nUf_w/exec"
 
 export default function App() {
   const [roomPricesPerNight, setRoomPricesPerNight] = useState({
