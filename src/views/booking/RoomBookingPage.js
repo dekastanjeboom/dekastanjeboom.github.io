@@ -23,7 +23,7 @@ import {
 import MainNavbar from 'components/Navbars/MainNavbar';
 import DarkFooter from 'components/Footers/DarkFooter';
 import RoomBookingHeader from "../../components/Headers/RoomBookingHeader";
-import { amenities, amenityAvailability, roomInfo, roomPricesPerNight, bookingTitle } from 'constants/rooms';
+import { amenities, roomInfo, bookingTitle } from 'constants/rooms';
 
 
 class RoomBookingPage extends React.Component {
@@ -133,13 +133,17 @@ class RoomBookingPage extends React.Component {
                             {roomType && roomType !== '' && (
                               <ul style={{ listStyleType: 'none', paddingLeft: 16 }}>
                                 {amenities
-                                  .filter((a, i) => amenityAvailability[roomType][i])
+                                  .filter((a) => a.roomTypes.includes(roomType))
                                   .map((amenityObj) => (
-                                    <li key={amenityObj.name} style={{ position: 'relative' }}>
+                                    <li
+                                      key={amenityObj.name}
+                                      style={{ position: 'relative' }}
+                                    >
                                       {amenityObj.iconClassName !== ''
                                         ? <i className={`fa-li ${amenityObj.iconClassName}`} />
                                         : <i className={`fa-li fas fa-check`} />}
-                                      {t(amenityObj.name)}</li>
+                                      {t(amenityObj.name)}
+                                    </li>
                                   ))}
                               </ul>
                             )}
@@ -147,15 +151,23 @@ class RoomBookingPage extends React.Component {
                         </Row>
 
                         <Row className="mb-2">
-                          <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
+                          <Col
+                            xs="5"
+                            className="text-right"
+                            style={{ paddingLeft: 8, paddingRight: 8 }}
+                          >
                             <b>{t('Price per night')}</b>
                           </Col>
                           <Col xs="7" className="text-left">
-                            <span>€{roomPricesPerNight[roomType]}</span>
+                            <span>€{this.props.roomPricesPerNight[roomType]}</span>
                           </Col>
                         </Row>
                         <Row className="mb-2">
-                          <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
+                          <Col
+                            xs="5"
+                            className="text-right"
+                            style={{ paddingLeft: 8, paddingRight: 8 }}
+                          >
                             <b>{t('Minimum reservation')}</b>
                           </Col>
                           <Col xs="7" className="text-left">
@@ -163,7 +175,11 @@ class RoomBookingPage extends React.Component {
                           </Col>
                         </Row>
                         <Row className="mb-2">
-                          <Col xs="5" className="text-right" style={{ paddingLeft: 8, paddingRight: 8 }}>
+                          <Col
+                            xs="5"
+                            className="text-right"
+                            style={{ paddingLeft: 8, paddingRight: 8 }}
+                          >
                             <b>{t('Check-in and out')}</b>
                           </Col>
                           <Col xs="7" className="text-left">

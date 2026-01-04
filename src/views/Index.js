@@ -17,15 +17,21 @@ import PhotosSection from './sections/PhotosSection';
 
 import { ROOM_DETAIL_URL_NAME } from 'constants/rooms';
 import { withTranslation } from 'react-i18next';
+import { STANDARD_ROOM } from "constants/rooms";
 
 
-function Index({ t }) {
+function Index({ t, roomPricesPerNight }) {
+
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
+
+    if (!roomPricesPerNight[STANDARD_ROOM]) { // Hack to avoid scroll on prop change
+      window.scrollTo(0, 0); // Why?
+      document.body.scrollTop = 0;
+    }
+
     return function cleanup() {
       document.body.classList.remove("index-page");
       document.body.classList.remove("sidebar-collapse");
@@ -45,12 +51,12 @@ function Index({ t }) {
             <VideoSection />
           </div>
           <div id="rooms-section">
-            <RoomsSection />
+            <RoomsSection roomPricesPerNight={roomPricesPerNight} />
           </div>
           <div id="breakfast-section">
             <BreakfastSection />
           </div>
-          
+
 
           <div id="seeanddo-section">
             <SeeAndDoSection />

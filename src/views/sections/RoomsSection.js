@@ -4,12 +4,12 @@ import { useTranslation } from 'react-i18next';
 // reactstrap components
 import { Container, Row, Col, Card, CardImg, CardBody, CardTitle, CardText } from "reactstrap";
 // import { STANDARD_ROOM, DELUXE_ROOM } from '../../constants/rooms';
-import { roomTypes, roomDescriptions, roomPricesPerNight, roomImages, ROOM_DETAIL_URL_NAME } from '../../constants/rooms';
+import { roomTypes, roomDescriptions, roomImages, ROOM_DETAIL_URL_NAME } from '../../constants/rooms';
 
 
 // core components
 
-function RoomsSection() {
+function RoomsSection({ roomPricesPerNight }) {
   const { t } = useTranslation();
 
   return (

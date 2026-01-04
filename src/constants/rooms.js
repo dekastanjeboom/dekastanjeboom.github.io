@@ -14,11 +14,14 @@ export const DELUXE_ROOM = 'downtown';
 
 export const roomTypes = [STANDARD_ROOM, DELUXE_ROOM];
 
-// Room prices
-export const roomPricesPerNight = {
-  [STANDARD_ROOM]: process.env.REACT_APP_PRICE_PER_ROOM_PER_NIGHT_EURO_STANDARD,
-  [DELUXE_ROOM]: process.env.REACT_APP_PRICE_PER_ROOM_PER_NIGHT_EURO_DELUXE,
-};
+// // Room prices
+// export const roomPricesPerNight = {
+//   [STANDARD_ROOM]: process.env.REACT_APP_PRICE_PER_ROOM_PER_NIGHT_EURO_STANDARD,
+//   [DELUXE_ROOM]: process.env.REACT_APP_PRICE_PER_ROOM_PER_NIGHT_EURO_DELUXE,
+// };
+
+
+
 
 
 export const roomAvailability = [
@@ -57,20 +60,29 @@ export const bookingTitle = {
 //TRANSLATION: Amenity names need to be translated
 export const amenities = [
   {
+    name: 'Terras',
+    iconClassName: '',
+    roomTypes: [DELUXE_ROOM]
+  },
+  {
     name: 'WiFi',
     iconClassName: 'fas fa-wifi',
+    roomTypes: [STANDARD_ROOM, DELUXE_ROOM]
   },
   {
     name: 'Shower',
     iconClassName: 'fas fa-shower',
+    roomTypes: [STANDARD_ROOM, DELUXE_ROOM]
   },
   {
     name: 'TV',
     iconClassName: 'fas fa-tv',
+    roomTypes: [STANDARD_ROOM, DELUXE_ROOM]
   },
   {
     name: 'Parking',
     iconClassName: 'fas fa-parking',
+    roomTypes: [STANDARD_ROOM, DELUXE_ROOM]
   },
   // {
   //   name: 'Sofabed for one extra person',
@@ -79,26 +91,26 @@ export const amenities = [
   {
     name: 'Airco',
     iconClassName: '',
+    roomTypes: [STANDARD_ROOM, DELUXE_ROOM]
   },
   {
     name: 'Towels',
     iconClassName: '',
+    roomTypes: [STANDARD_ROOM, DELUXE_ROOM]
   },
   {
     name: 'Hairdryer',
     iconClassName: '',
+    roomTypes: [STANDARD_ROOM, DELUXE_ROOM]
   },
   {
     name: 'Silent fridge',
     iconClassName: '',
+    roomTypes: [STANDARD_ROOM, DELUXE_ROOM]
   },
-  {
-    name: 'Terras',
-    iconClassName: ''
-  }
 ]
 
-export const amenityAvailability = {
-  [STANDARD_ROOM]: [true, true, true, true, true, true, true, true, true, false],
-  [DELUXE_ROOM]: [true, true, true, true, true, true, true, true, true, true],
-}
+// export const amenityAvailability = {
+//   [STANDARD_ROOM]: [true, true, true, true, true, true, true, true, true],
+//   [DELUXE_ROOM]: [true, true, true, true, true, true, true, true, true],
+// }
